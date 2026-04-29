@@ -8,7 +8,7 @@
         "managersEmail": "erlich.bachman@piedpiper.com",
         "teamId": "WORKTEAM-1-000",
         "teamName": "Pied Piper",
-        "parentTeamId": ""
+        "parentTeamId": "NONE"
       },
       {
         "email": "richard.hendricks@piedpiper.com",
