@@ -1,0 +1,109 @@
+{
+    "Report_Entry": [
+      {
+        "email": "erlich.bachman@piedpiper.com",
+        "employeeId": "100000",
+        "firstName": "Erlich",
+        "lastName": "Bachman",
+        "managersEmail": "erlich.bachman@piedpiper.com",
+        "teamList": [
+          {
+            "teamName": "piedpiper:team::pied-piper",
+            "teamId": "WORKTEAM-1-000",
+            "teamDisplayName": "Pied Piper",
+            "parentTeamSlug": "NONE"
+          }
+        ]
+      },
+      {
+        "email": "richard.hendricks@piedpiper.com",
+        "employeeId": "100001",
+        "firstName": "Richard",
+        "lastName": "Hendricks",
+        "managersEmail": "erlich.bachman@piedpiper.com",
+        "teamList": [
+          {
+            "teamName": "piedpiper:team::engineering",
+            "teamId": "WORKTEAM-1-001",
+            "teamDisplayName": "Engineering",
+            "parentTeamSlug": "WORKTEAM-1-000"
+          }
+        ]
+      },
+      {
+        "email": "bertram.gilfoyle@piedpiper.com",
+        "employeeId": "100002",
+        "firstName": "Bertram",
+        "lastName": "Gilfoyle",
+        "managersEmail": "richard.hendricks@piedpiper.com",
+        "teamList": [
+          {
+            "teamName": "piedpiper:team::platform",
+            "teamId": "WORKTEAM-1-002",
+            "teamDisplayName": "Platform",
+            "parentTeamSlug": "WORKTEAM-1-001"
+          }
+        ]
+      },
+      {
+        "email": "dinesh.chugtai@piedpiper.com",
+        "employeeId": "100003",
+        "firstName": "Dinesh",
+        "lastName": "Chugtai",
+        "managersEmail": "richard.hendricks@piedpiper.com",
+        "teamList": [
+          {
+            "teamName": "piedpiper:team::frontend",
+            "teamId": "WORKTEAM-1-003",
+            "teamDisplayName": "Frontend",
+            "parentTeamSlug": "WORKTEAM-1-001"
+          }
+        ]
+      },
+      {
+        "email": "jared.dunn@piedpiper.com",
+        "employeeId": "100004",
+        "firstName": "Jared",
+        "lastName": "Dunn",
+        "managersEmail": "erlich.bachman@piedpiper.com",
+        "teamList": [
+          {
+            "teamName": "piedpiper:team::operations",
+            "teamId": "WORKTEAM-1-004",
+            "teamDisplayName": "Operations",
+            "parentTeamSlug": "WORKTEAM-1-000"
+          }
+        ]
+      },
+      {
+        "email": "monica.hall@piedpiper.com",
+        "employeeId": "100005",
+        "firstName": "Monica",
+        "lastName": "Hall",
+        "managersEmail": "jared.dunn@piedpiper.com",
+        "teamList": [
+          {
+            "teamName": "piedpiper:team::people-ops",
+            "teamId": "WORKTEAM-1-005",
+            "teamDisplayName": "People Ops",
+            "parentTeamSlug": "WORKTEAM-1-004"
+          }
+        ]
+      },
+      {
+        "email": "nelson.bighetti@piedpiper.com",
+        "employeeId": "100006",
+        "firstName": "Nelson",
+        "lastName": "Bighetti",
+        "managersEmail": "bertram.gilfoyle@piedpiper.com",
+        "teamList": [
+          {
+            "teamName": "piedpiper:team::infrastructure",
+            "teamId": "WORKTEAM-1-006",
+            "teamDisplayName": "Infrastructure",
+            "parentTeamSlug": "WORKTEAM-1-002"
+          }
+        ]
+      }
+    ]
+  }
