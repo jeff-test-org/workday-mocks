@@ -1,0 +1,53 @@
+{
+  "type": "ONE_EMPLOYEE_MULTIPLE_TEAMS_MULTIPLE_FIELDS",
+  "email": {
+    "columnName": "Email_ID"
+  },
+  "lastName": {
+    "columnName": "Last_Name"
+  },
+  "teams": [
+    {
+      "teamId": {
+        "columnName": "Division"
+      },
+      "teamName": {
+        "columnName": "Division"
+      },
+      "parentTeamIdField": null
+    },
+    {
+      "teamId": {
+        "columnName": "Scrum"
+      },
+      "teamName": {
+        "columnName": "Scrum"
+      },
+      "parentTeamIdField": {
+        "columnName": "Mission"
+      }
+    },
+    {
+      "teamId": {
+        "columnName": "Mission"
+      },
+      "teamName": {
+        "columnName": "Mission"
+      },
+      "parentTeamIdField": {
+        "columnName": "Division"
+      }
+    }
+  ],
+  "firstName": {
+    "columnName": "First_Name"
+  },
+  "rootTeams": [],
+  "employeeId": {
+    "columnName": "Employee_ID"
+  },
+  "employeeRole": {
+    "columnName": "Business_Title"
+  },
+  "managerEmail": null
+}

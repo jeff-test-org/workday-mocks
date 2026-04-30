@@ -1,0 +1,135 @@
+{
+  "Report_Entry": [
+    {
+      "teamName": "TeamEngInfra",
+      "firstName": "Alex",
+      "lastName": "Alex",
+      "managerEmail": "connie.connie@company.com",
+      "employeeSupervisoryOrgId": [
+        {
+          "employeeSupervisoryOrgId": "SUPEngInfraSpecial"
+        }
+      ],
+      "teamSupervisoryOrgId": "SUPEngInfra",
+      "manager": "Connie Connie",
+      "employeeId": "EMP A",
+      "teamDisplayName": "Engineering - Infra",
+      "email": "alex.alex@company.com",
+      "employeeRole": "Staff Software Engineer"
+    },
+    {
+      "teamName": "TeamEngInfra",
+      "firstName": "Bob",
+      "lastName": "Bob",
+      "managerEmail": "connie.connie@company.com",
+      "teamSupervisoryOrgId": "SUPEngInfra",
+      "manager": "Connie Connie",
+      "employeeId": "EMP B",
+      "teamDisplayName": "Engineering - Infra",
+      "email": "bob.bob@company.com",
+      "employeeRole": "Software Engineer - Infra"
+    },
+    {
+      "teamName": "TeamEng",
+      "firstName": "Connie",
+      "lastName": "Connie",
+      "managerEmail": "george.george@company.com",
+      "employeeSupervisoryOrgId": [
+        {
+          "employeeSupervisoryOrgId": "SUPEngInfra"
+        }
+      ],
+      "teamSupervisoryOrgId": "SUPEng",
+      "manager": "George George",
+      "employeeId": "EMP C",
+      "teamDisplayName": "Engineering",
+      "email": "connie.connie@company.com",
+      "employeeRole": "Engineering Manager - Infra"
+    },
+    {
+      "teamName": "TeamEngProduct",
+      "firstName": "Darren",
+      "lastName": "Darren",
+      "managerEmail": "fiona.fiona@compnay.com",
+      "teamSupervisoryOrgId": "SUPEngProd",
+      "manager": "Fiona Fiona",
+      "employeeId": "EMP D",
+      "teamDisplayName": "Team Eng Product",
+      "email": "darren.darren@company.com",
+      "employeeRole": "Staff Software Engineer"
+    },
+    {
+      "teamName": "TeamEngResearch",
+      "firstName": "Eli",
+      "lastName": "Eli",
+      "managerEmail": "fiona.fiona@company.com",
+      "teamSupervisoryOrgId": "SUPEngResearch",
+      "manager": "Fiona Fiona",
+      "employeeId": "EMP E",
+      "teamDisplayName": "Team Engineering Research",
+      "email": "eli.eli@company.com",
+      "employeeRole": "Software Engineer"
+    },
+    {
+      "teamName": "TeamEng",
+      "firstName": "Fiona",
+      "lastName": "Fiona",
+      "managerEmail": "george.george@company.com",
+      "teamSupervisoryOrgId": "SUPEng",
+      "manager": "George George",
+      "employeeSupervisoryOrgId": [
+        {
+          "employeeSupervisoryOrgId": "SUPEngProd"
+        },
+        {
+          "employeeSupervisoryOrgId": "SUPEngResearch"
+        }
+      ],
+      "employeeId": "EMP F",
+      "teamDisplayName": "Engineering",
+      "email": "fiona.fiona@company.com",
+      "employeeRole": "Senior Software Engineering Manager - Product & Research"
+    },
+    {
+      "teamName": "TeamExec",
+      "firstName": "George",
+      "lastName": "George",
+      "managerEmail": null,
+      "employeeSupervisoryOrgId": [
+        {
+          "employeeSupervisoryOrgId": "SUPEng"
+        }
+      ],
+      "teamSupervisoryOrgId": "SUPExec",
+      "manager": null,
+      "employeeId": "EMP G",
+      "teamDisplayName": "Executive",
+      "email": "george.george@company.com",
+      "employeeRole": "Vice President - Engineering"
+    },
+    {
+      "teamName": "TeamEngInfraSpecial",
+      "firstName": "Hannah",
+      "lastName": "Hannah",
+      "managerEmail": "hannah.hannah@company.com",
+      "teamSupervisoryOrgId": "SUPEngInfraSpecial",
+      "manager": "Ales Ales",
+      "employeeId": "EMP H",
+      "teamDisplayName": "Team Engineering - Infra - Special Projects",
+      "email": "hannah.hannah@company.com",
+      "employeeRole": "Software Engineer - Infra Special Projects"
+    },
+    {
+      "teamName": "TeamEng",
+      "firstName": "Intern",
+      "lastName": "Intern",
+      "managerEmail": "intern.intern@company.com",
+      "teamSupervisoryOrgId": "SUPEngInfraSpecial",
+      "manager": "Alex Alex",
+      "employeeId": "EMP I",
+      "teamDisplayName": "Engineering",
+      "email": "intern.intern@company.com",
+      "employeeRole": "Software Engineer"
+    }
+  ]
+}

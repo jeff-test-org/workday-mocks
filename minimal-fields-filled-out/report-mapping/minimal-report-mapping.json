@@ -1,0 +1,19 @@
+{
+  "type": "ONE_EMPLOYEE_ONE_TEAM",
+  "email": {
+    "columnName": "email"
+  },
+  "teamId": {
+    "columnName": "teamName"
+  },
+  "lastName": null,
+  "teamName": null,
+  "firstName": null,
+  "hierarchy": null,
+  "rootTeams": [],
+  "employeeId": {
+    "columnName": "employeeId"
+  },
+  "employeeRole": null,
+  "managerEmail": null
+}

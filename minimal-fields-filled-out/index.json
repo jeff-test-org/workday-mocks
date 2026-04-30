@@ -1,0 +1,19 @@
+{
+  "Report_Entry": [
+    {
+      "email": "person1@test.com",
+      "teamName": "Engineering",
+      "employeeId": "1"
+    },
+    {
+      "email": "person2@test.com",
+      "teamName": "SRE Team",
+      "employeeId": "2"
+    },
+    {
+      "email": "person3@test.com",
+      "teamName": "Onboarding Team",
+      "employeeId": "3"
+    }
+  ]
+}

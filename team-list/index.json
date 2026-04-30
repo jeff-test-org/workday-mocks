@@ -1,0 +1,47 @@
+{
+  "Report_Entry": [
+    {
+      "firstName": "Person",
+      "lastName": "F",
+      "managerEmail": "person.m@xyz.com",
+      "manager": "Person M",
+      "teamDisplayId": "SUP1",
+      "employeeId": "F",
+      "teamDisplayName": "CEE: Eng X (Person M)",
+      "email": "person.f@xyz.com",
+      "employeeRole": "PE"
+    },
+    {
+      "firstName": "Person",
+      "lastName": "T",
+      "managerEmail": "person.m@xyz.com",
+      "manager": "Person M",
+      "teamDisplayId": "SUP1",
+      "teamDisplayName": "CEE: Eng X (Person M)",
+      "employeeId": "T",
+      "email": "person.t@xyz.com",
+      "employeeRole": "Team Lead",
+      "allSupervisoryOrganizationsManaged_group": [
+        {
+          "employeeSupervisoryOrgId": "SUP2",
+          "employeeSupervisoryOrgName": "CEE: Eng X - Grp 1 (Person T)",
+          "teamSupervisoryOrgId": "SUP1",
+          "teamSupervisoryOrgName": "CEE: Eng X (Person M)",
+          "teamSupervisoryOrgSuperiorId": "SUP3",
+          "teamSupervisoryOrgSuperiorName": "CEE (Person N)"
+        }
+      ]
+    },
+    {
+      "firstName": "Person",
+      "lastName": "P",
+      "managerEmail": "person.t@xyz.com",
+      "manager": "Person T",
+      "teamDisplayId": "SUP2",
+      "employeeId": "P",
+      "teamDisplayName": "CEE: Eng X - Grp 1 (Person T)",
+      "email": "person.p@xyz.com",
+      "employeeRole": "SE"
+    }
+  ]
+}

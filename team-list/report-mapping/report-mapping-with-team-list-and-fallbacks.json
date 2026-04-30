@@ -1,0 +1,57 @@
+{
+  "type": "ONE_EMPLOYEE_MULTIPLE_TEAMS",
+  "email": {
+    "columnName": "email"
+  },
+  "lastName": {
+    "columnName": "lastName"
+  },
+  "firstName": {
+    "columnName": "firstName"
+  },
+  "rootTeams": [],
+  "employeeId": {
+    "columnName": "employeeId"
+  },
+  "employeeRole": {
+    "columnName": "employeeRole"
+  },
+  "managerEmail": {
+    "columnName": "managerEmail"
+  },
+  "fallbackFields": {
+    "teamId": {
+      "columnName": "teamDisplayId"
+    },
+    "teamName": {
+      "columnName": "teamDisplayName"
+    },
+    "fieldOnChildNode": {
+      "columnName": "teamDisplayId"
+    },
+    "fieldOnParentNode": null
+  },
+  "teamListFields": {
+    "teamId": {
+      "columnName": "teamSupervisoryOrgId"
+    },
+    "teamName": {
+      "columnName": "teamSupervisoryOrgName"
+    },
+    "hierarchy": {
+      "fieldOnChildNode": {
+        "columnName": "teamSupervisoryOrgId"
+      },
+      "fieldOnParentNode": {
+        "isList": false,
+        "columnName": "employeeSupervisoryOrgId"
+      }
+    },
+    "teamListKey": {
+      "columnName": "allSupervisoryOrganizationsManaged_group"
+    },
+    "teamEmployeeManages": {
+      "columnName": "employeeSupervisoryOrgId"
+    }
+  }
+}

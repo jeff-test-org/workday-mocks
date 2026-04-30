@@ -1,0 +1,88 @@
+{
+  "Report_Entry": [
+    {
+      "email": "ceo@company.com",
+      "teamId": "Team1",
+      "firstName":"Exec",
+      "lastName": "CEO",
+      "teamName": "Company Limited",
+      "childHierarchyColumn": null,
+      "parentHierarchyColumn": "SUP1",
+      "employeeId": "1",
+      "employeeRole": "CEO",
+      "managerEmail": null
+    },
+    {
+      "email": "cto@company.com",
+      "teamId": "Team2",
+      "firstName":"Head",
+      "lastName": "Of Technology",
+      "teamName": "Executive Team",
+      "childHierarchyColumn": "SUP1",
+      "parentHierarchyColumn": "SUP2",
+      "employeeId": "2",
+      "employeeRole": "VP of Engineering",
+      "managerEmail": "ceo@company.com"
+    },
+    {
+      "email": "cfo@company.com",
+      "teamId": "Team2",
+      "firstName":"Head",
+      "lastName": "of Finance",
+      "teamName": "Executive Team",
+      "childHierarchyColumn": "SUP1",
+      "parentHierarchyColumn": "SUP3",
+      "employeeId": "3",
+      "employeeRole": "VP of Finance",
+      "managerEmail": "ceo@company.com"
+    },
+    {
+      "email": "eng.director@company.com",
+      "teamId": "Team3",
+      "firstName":"Eng",
+      "lastName": "Director",
+      "teamName": "Engineering Team",
+      "childHierarchyColumn": "SUP2",
+      "parentHierarchyColumn": "SUP4",
+      "employeeId": "4",
+      "employeeRole": "Director Of Engineering",
+      "managerEmail": "cto@company.com"
+    },
+    {
+      "email": "team.lead@company.com",
+      "teamId": "Team3",
+      "firstName":"Eng",
+      "lastName": "Team Lead",
+      "teamName": "Engineering Team",
+      "childHierarchyColumn": "SUP4",
+      "parentHierarchyColumn": "SUP5",
+      "employeeId": "5",
+      "employeeRole": "Team Lead - Eng",
+      "managerEmail": "eng.director@company.com"
+    },
+    {
+      "email": "accountant@company.com",
+      "teamId": "Team4",
+      "firstName":"Accountant",
+      "lastName": "of Math",
+      "teamName": "Accounting",
+      "childHierarchyColumn": "SUP3",
+      "parentHierarchyColumn": null,
+      "employeeId": "6",
+      "employeeRole": "Accountant",
+      "managerEmail": "cfo@company.com"
+    },
+    {
+      "email": "engineer@company.com",
+      "teamId": "Team5",
+      "firstName":"Random",
+      "lastName": "Engineer",
+      "teamName": "Engineering - Product A",
+      "childHierarchyColumn": "SUP5",
+      "parentHierarchyColumn": null,
+      "employeeId": "7",
+      "employeeRole": "Software Engineer",
+      "managerEmail": "team.lead@company.com"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "Report_Entry": [
+    {
+      "firstName": "Person",
+      "lastName": "A",
+      "managerEmail": "person.e@xyz.com",
+      "manager": "Person E",
+      "teamDisplayId": "SUP3",
+      "teamDisplayName": "Executive Level",
+      "employeeId": "A",
+      "email": "person.a@xyz.com",
+      "employeeRole": "VP - Revenue",
+      "allSupervisoryOrganizationsManaged_group": [
+        {
+          "employeeSupervisoryOrgId": "SUP4",
+          "employeeSupervisoryOrgName": "Rev (Person A)",
+          "teamSupervisoryOrgId": "SUP3",
+          "teamSupervisoryOrgName": "Executive Level",
+          "teamSupervisoryOrgSuperiorId": "SUP2",
+          "teamSupervisoryOrgSuperiorName": "Company Limited"
+        }
+      ]
+    },
+    {
+      "firstName": "Person",
+      "lastName": "J",
+      "managerEmail": "person.a@xyz.com",
+      "manager": "Person A",
+      "teamDisplayId": "SUP4",
+      "teamDisplayName": "Rev (Person A)",
+      "employeeId": "J",
+      "email": "person.j@xyz.com",
+      "employeeRole": "EGM - Ecosystem & Partnerships",
+      "allSupervisoryOrganizationsManaged_group": [
+        {
+          "employeeSupervisoryOrgId": "SUP5",
+          "employeeSupervisoryOrgName": "Growth: E&P (Person J)",
+          "teamSupervisoryOrgId": "SUP4",
+          "teamSupervisoryOrgName": "Rev (Person A)",
+          "teamSupervisoryOrgSuperiorId": "SUP3",
+          "teamSupervisoryOrgSuperiorName": "Executive Level"
+        },
+        {
+          "employeeSupervisoryOrgId": "SUP6",
+          "employeeSupervisoryOrgName": "Growth: E (Person J)",
+          "teamSupervisoryOrgId": "SUP5",
+          "teamSupervisoryOrgName": "Growth: E&P (Person J)",
+          "teamSupervisoryOrgSuperiorId": "SUP4",
+          "teamSupervisoryOrgSuperiorName": "Rev (Person A)"
+        },
+        {
+          "employeeSupervisoryOrgId": "SUP7",
+          "employeeSupervisoryOrgName": "Growth: P (Person J)",
+          "teamSupervisoryOrgId": "SUP5",
+          "teamSupervisoryOrgName": "Growth: E&P (Person J)",
+          "teamSupervisoryOrgSuperiorId": "SUP4",
+          "teamSupervisoryOrgSuperiorName": "Rev (Person A)"
+        }
+      ]
+    },
+    {
+      "firstName": "Person",
+      "lastName": "Q",
+      "managerEmail": "person.j@xyz.com",
+      "manager": "Person J",
+      "teamDisplayId": "SUP7",
+      "employeeId": "Q",
+      "teamDisplayName": "Growth: P (Person J)",
+      "email": "person.q@xyz.com",
+      "employeeRole": "Salesperson"
+    },
+    {
+      "firstName": "Person",
+      "lastName": "Z",
+      "managerEmail": "person.j@xyz.com",
+      "manager": "Person Z",
+      "teamDisplayId": "SUP6",
+      "employeeId": "Z",
+      "teamDisplayName": "Growth: E (Person J)",
+      "email": "person.z@xyz.com",
+      "employeeRole": "Salesperson"
+    }
+  ]
+}

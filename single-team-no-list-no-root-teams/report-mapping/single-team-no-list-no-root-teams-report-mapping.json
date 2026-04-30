@@ -1,0 +1,37 @@
+{
+  "type": "ONE_EMPLOYEE_ONE_TEAM",
+  "email": {
+    "columnName": "email"
+  },
+  "teamId": {
+    "columnName": "teamId"
+  },
+  "lastName": {
+    "columnName": "lastName"
+  },
+  "teamName": {
+    "columnName": "teamName"
+  },
+  "firstName": {
+    "columnName": "firstName"
+  },
+  "hierarchy": {
+    "fieldOnChildNode": {
+      "columnName": "childHierarchyColumn"
+    },
+    "fieldOnParentNode": {
+      "isList": false,
+      "columnName": "parentHierarchyColumn"
+    }
+  },
+  "rootTeams": [],
+  "employeeId": {
+    "columnName": "employeeId"
+  },
+  "employeeRole": {
+    "columnName": "employeeRole"
+  },
+  "managerEmail": {
+    "columnName": "managerEmail"
+  }
+}
