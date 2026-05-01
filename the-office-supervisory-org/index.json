@@ -1,0 +1,81 @@
+{
+  "Report_Entry": [
+    {
+      "email": "michael.scott@dundermifflin.com",
+      "employeeId": "200000",
+      "firstName": "Michael",
+      "lastName": "Scott",
+      "managersEmail": "michael.scott@dundermifflin.com",
+      "teamId": "WORKTEAM-OFFICE-1-000",
+      "teamName": "Dunder Mifflin",
+      "childHierarchyColumn": null,
+      "parentHierarchyColumn": "SUP-100"
+    },
+    {
+      "email": "dwight.schrute@dundermifflin.com",
+      "employeeId": "200001",
+      "firstName": "Dwight",
+      "lastName": "Schrute",
+      "managersEmail": "michael.scott@dundermifflin.com",
+      "teamId": "WORKTEAM-OFFICE-1-001",
+      "teamName": "Sales",
+      "childHierarchyColumn": "SUP-100",
+      "parentHierarchyColumn": "SUP-101"
+    },
+    {
+      "email": "jim.halpert@dundermifflin.com",
+      "employeeId": "200002",
+      "firstName": "Jim",
+      "lastName": "Halpert",
+      "managersEmail": "dwight.schrute@dundermifflin.com",
+      "teamId": "WORKTEAM-OFFICE-1-002",
+      "teamName": "Inside Sales",
+      "childHierarchyColumn": "SUP-101",
+      "parentHierarchyColumn": null
+    },
+    {
+      "email": "andy.bernard@dundermifflin.com",
+      "employeeId": "200003",
+      "firstName": "Andy",
+      "lastName": "Bernard",
+      "managersEmail": "dwight.schrute@dundermifflin.com",
+      "teamId": "WORKTEAM-OFFICE-1-003",
+      "teamName": "Client Relations",
+      "childHierarchyColumn": "SUP-101",
+      "parentHierarchyColumn": null
+    },
+    {
+      "email": "angela.martin@dundermifflin.com",
+      "employeeId": "200004",
+      "firstName": "Angela",
+      "lastName": "Martin",
+      "managersEmail": "michael.scott@dundermifflin.com",
+      "teamId": "WORKTEAM-OFFICE-1-004",
+      "teamName": "Accounting",
+      "childHierarchyColumn": "SUP-100",
+      "parentHierarchyColumn": "SUP-104"
+    },
+    {
+      "email": "kevin.malone@dundermifflin.com",
+      "employeeId": "200005",
+      "firstName": "Kevin",
+      "lastName": "Malone",
+      "managersEmail": "angela.martin@dundermifflin.com",
+      "teamId": "WORKTEAM-OFFICE-1-005",
+      "teamName": "Payroll",
+      "childHierarchyColumn": "SUP-104",
+      "parentHierarchyColumn": null
+    },
+    {
+      "email": "darryl.philbin@dundermifflin.com",
+      "employeeId": "200006",
+      "firstName": "Darryl",
+      "lastName": "Philbin",
+      "managersEmail": "michael.scott@dundermifflin.com",
+      "teamId": "WORKTEAM-OFFICE-1-006",
+      "teamName": "Operations",
+      "childHierarchyColumn": "SUP-100",
+      "parentHierarchyColumn": null
+    }
+  ]
+}

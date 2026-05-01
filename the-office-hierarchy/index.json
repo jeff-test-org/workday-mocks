@@ -1,0 +1,74 @@
+{
+    "Report_Entry": [
+      {
+        "email": "michael.scott@dundermifflin.com",
+        "employeeId": "200000",
+        "firstName": "Michael",
+        "lastName": "Scott",
+        "managersEmail": "michael.scott@dundermifflin.com",
+        "teamId": "WORKTEAM-OFFICE-1-000",
+        "teamName": "Dunder Mifflin",
+        "parentTeamId": "NONE"
+      },
+      {
+        "email": "dwight.schrute@dundermifflin.com",
+        "employeeId": "200001",
+        "firstName": "Dwight",
+        "lastName": "Schrute",
+        "managersEmail": "michael.scott@dundermifflin.com",
+        "teamId": "WORKTEAM-OFFICE-1-001",
+        "teamName": "Sales",
+        "parentTeamId": "WORKTEAM-OFFICE-1-000"
+      },
+      {
+        "email": "jim.halpert@dundermifflin.com",
+        "employeeId": "200002",
+        "firstName": "Jim",
+        "lastName": "Halpert",
+        "managersEmail": "dwight.schrute@dundermifflin.com",
+        "teamId": "WORKTEAM-OFFICE-1-002",
+        "teamName": "Inside Sales",
+        "parentTeamId": "WORKTEAM-OFFICE-1-001"
+      },
+      {
+        "email": "andy.bernard@dundermifflin.com",
+        "employeeId": "200003",
+        "firstName": "Andy",
+        "lastName": "Bernard",
+        "managersEmail": "dwight.schrute@dundermifflin.com",
+        "teamId": "WORKTEAM-OFFICE-1-003",
+        "teamName": "Client Relations",
+        "parentTeamId": "WORKTEAM-OFFICE-1-001"
+      },
+      {
+        "email": "angela.martin@dundermifflin.com",
+        "employeeId": "200004",
+        "firstName": "Angela",
+        "lastName": "Martin",
+        "managersEmail": "michael.scott@dundermifflin.com",
+        "teamId": "WORKTEAM-OFFICE-1-004",
+        "teamName": "Accounting",
+        "parentTeamId": "WORKTEAM-OFFICE-1-000"
+      },
+      {
+        "email": "kevin.malone@dundermifflin.com",
+        "employeeId": "200005",
+        "firstName": "Kevin",
+        "lastName": "Malone",
+        "managersEmail": "angela.martin@dundermifflin.com",
+        "teamId": "WORKTEAM-OFFICE-1-005",
+        "teamName": "Payroll",
+        "parentTeamId": "WORKTEAM-OFFICE-1-004"
+      },
+      {
+        "email": "darryl.philbin@dundermifflin.com",
+        "employeeId": "200006",
+        "firstName": "Darryl",
+        "lastName": "Philbin",
+        "managersEmail": "michael.scott@dundermifflin.com",
+        "teamId": "WORKTEAM-OFFICE-1-006",
+        "teamName": "Operations",
+        "parentTeamId": "WORKTEAM-OFFICE-1-000"
+      }
+    ]
+  }
