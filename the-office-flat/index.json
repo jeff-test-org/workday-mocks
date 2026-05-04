@@ -7,7 +7,7 @@
         "lastName": "Scott",
         "managersEmail": "michael.scott@dundermifflin.com",
         "teamId": "WORKTEAM-OFFICE-1-000",
-        "teamName": "Dunder Mifflin",
+        "teamName": "OFF: Dunder Mifflin",
         "parentTeamId": "NONE"
       },
       {
@@ -17,7 +17,7 @@
         "lastName": "Schrute",
         "managersEmail": "michael.scott@dundermifflin.com",
         "teamId": "WORKTEAM-OFFICE-1-001",
-        "teamName": "Sales",
+        "teamName": "OFF: Sales",
         "parentTeamId": "WORKTEAM-OFFICE-1-000"
       },
       {
@@ -27,7 +27,7 @@
         "lastName": "Halpert",
         "managersEmail": "dwight.schrute@dundermifflin.com",
         "teamId": "WORKTEAM-OFFICE-1-002",
-        "teamName": "Inside Sales",
+        "teamName": "OFF: Inside Sales",
         "parentTeamId": "WORKTEAM-OFFICE-1-001"
       },
       {
@@ -37,7 +37,7 @@
         "lastName": "Bernard",
         "managersEmail": "dwight.schrute@dundermifflin.com",
         "teamId": "WORKTEAM-OFFICE-1-003",
-        "teamName": "Client Relations",
+        "teamName": "OFF: Client Relations",
         "parentTeamId": "WORKTEAM-OFFICE-1-001"
       },
       {
@@ -47,7 +47,7 @@
         "lastName": "Martin",
         "managersEmail": "michael.scott@dundermifflin.com",
         "teamId": "WORKTEAM-OFFICE-1-004",
-        "teamName": "Accounting",
+        "teamName": "OFF: Accounting",
         "parentTeamId": "WORKTEAM-OFFICE-1-000"
       },
       {
@@ -57,7 +57,7 @@
         "lastName": "Malone",
         "managersEmail": "angela.martin@dundermifflin.com",
         "teamId": "WORKTEAM-OFFICE-1-005",
-        "teamName": "Payroll",
+        "teamName": "OFF: Payroll",
         "parentTeamId": "WORKTEAM-OFFICE-1-004"
       },
       {
@@ -67,7 +67,7 @@
         "lastName": "Philbin",
         "managersEmail": "michael.scott@dundermifflin.com",
         "teamId": "WORKTEAM-OFFICE-1-006",
-        "teamName": "Operations",
+        "teamName": "OFF: Operations",
         "parentTeamId": "WORKTEAM-OFFICE-1-000"
       }
     ]

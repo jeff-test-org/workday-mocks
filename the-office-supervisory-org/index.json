@@ -7,7 +7,7 @@
       "lastName": "Scott",
       "managersEmail": "michael.scott@dundermifflin.com",
       "teamId": "WORKTEAM-OFFICE-1-000",
-      "teamName": "Dunder Mifflin",
+      "teamName": "OFF: Dunder Mifflin",
       "childHierarchyColumn": null,
       "parentHierarchyColumn": "SUP-100"
     },
@@ -18,7 +18,7 @@
       "lastName": "Schrute",
       "managersEmail": "michael.scott@dundermifflin.com",
       "teamId": "WORKTEAM-OFFICE-1-001",
-      "teamName": "Sales",
+      "teamName": "OFF: Sales",
       "childHierarchyColumn": "SUP-100",
       "parentHierarchyColumn": "SUP-101"
     },
@@ -29,7 +29,7 @@
       "lastName": "Halpert",
       "managersEmail": "dwight.schrute@dundermifflin.com",
       "teamId": "WORKTEAM-OFFICE-1-002",
-      "teamName": "Inside Sales",
+      "teamName": "OFF: Inside Sales",
       "childHierarchyColumn": "SUP-101",
       "parentHierarchyColumn": null
     },
@@ -40,7 +40,7 @@
       "lastName": "Bernard",
       "managersEmail": "dwight.schrute@dundermifflin.com",
       "teamId": "WORKTEAM-OFFICE-1-003",
-      "teamName": "Client Relations",
+      "teamName": "OFF: Client Relations",
       "childHierarchyColumn": "SUP-101",
       "parentHierarchyColumn": null
     },
@@ -51,7 +51,7 @@
       "lastName": "Martin",
       "managersEmail": "michael.scott@dundermifflin.com",
       "teamId": "WORKTEAM-OFFICE-1-004",
-      "teamName": "Accounting",
+      "teamName": "OFF: Accounting",
       "childHierarchyColumn": "SUP-100",
       "parentHierarchyColumn": "SUP-104"
     },
@@ -62,7 +62,7 @@
       "lastName": "Malone",
       "managersEmail": "angela.martin@dundermifflin.com",
       "teamId": "WORKTEAM-OFFICE-1-005",
-      "teamName": "Payroll",
+      "teamName": "OFF: Payroll",
       "childHierarchyColumn": "SUP-104",
       "parentHierarchyColumn": null
     },
@@ -73,7 +73,7 @@
       "lastName": "Philbin",
       "managersEmail": "michael.scott@dundermifflin.com",
       "teamId": "WORKTEAM-OFFICE-1-006",
-      "teamName": "Operations",
+      "teamName": "OFF: Operations",
       "childHierarchyColumn": "SUP-100",
       "parentHierarchyColumn": null
     }
