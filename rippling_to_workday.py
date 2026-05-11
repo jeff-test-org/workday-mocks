@@ -438,7 +438,7 @@ def main():
 
     if args.format in ("all", "customer"):
         report = build_customer_report(people, domain=args.domain)
-        out = script_dir / "cortex-customer" / "index.json"
+        out = script_dir / "cortex-team-list" / "index.json"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(report, indent=2) + "\n")
         output_paths.append(out)
