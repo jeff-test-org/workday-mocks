@@ -242,7 +242,7 @@ def build_workday_report(people: list[dict], domain: str = "cortex.io") -> dict:
             team_counter += 1
             team_id = f"WORKTEAM-1-{team_counter:03d}"
             dept = title_to_dept(title, name)
-            team_name = f"CX: {dept}"
+            team_name = dept
             parent_team_id = "NONE"
             email_to_team[email] = {
                 "teamId": team_id,
@@ -255,7 +255,7 @@ def build_workday_report(people: list[dict], domain: str = "cortex.io") -> dict:
             team_id = f"WORKTEAM-1-{team_counter:03d}"
             dept = title_to_dept(title, name)
             # Disambiguate team name with manager's name
-            team_name = f"CX: {dept} ({first_name} {last_name})"
+            team_name = f"{dept} ({first_name} {last_name})"
             # Parent = the manager's team
             mgr_team = email_to_team.get(manager_email, {})
             parent_team_id = mgr_team.get("teamId", "NONE")
@@ -272,7 +272,7 @@ def build_workday_report(people: list[dict], domain: str = "cortex.io") -> dict:
                 # Manager doesn't have a team yet (shouldn't happen), create one
                 team_counter += 1
                 team_id = f"WORKTEAM-1-{team_counter:03d}"
-                team_name = f"CX: Team {name}"
+                team_name = f"Team {name}"
                 parent_team_id = "NONE"
                 email_to_team[email] = {
                     "teamId": team_id,

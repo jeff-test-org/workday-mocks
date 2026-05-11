@@ -9,7 +9,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-001",
-          "teamDisplayName": "CX: Engineering",
+          "teamDisplayName": "Engineering",
           "referenceID": "NONE"
         }
       ]
@@ -23,7 +23,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-001",
-          "teamDisplayName": "CX: Engineering",
+          "teamDisplayName": "Engineering",
           "referenceID": "NONE"
         }
       ]
@@ -37,7 +37,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-002",
-          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "teamDisplayName": "Engineering (Gabriel Villenave)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -51,7 +51,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-002",
-          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "teamDisplayName": "Engineering (Gabriel Villenave)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -65,7 +65,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-002",
-          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "teamDisplayName": "Engineering (Gabriel Villenave)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -79,7 +79,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-002",
-          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "teamDisplayName": "Engineering (Gabriel Villenave)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -93,7 +93,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-002",
-          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "teamDisplayName": "Engineering (Gabriel Villenave)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -107,7 +107,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-002",
-          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "teamDisplayName": "Engineering (Gabriel Villenave)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -121,7 +121,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-002",
-          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "teamDisplayName": "Engineering (Gabriel Villenave)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -135,7 +135,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-002",
-          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "teamDisplayName": "Engineering (Gabriel Villenave)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -149,7 +149,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-002",
-          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "teamDisplayName": "Engineering (Gabriel Villenave)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -163,7 +163,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-003",
-          "teamDisplayName": "CX: Engineering (Chelsea Hohmann)",
+          "teamDisplayName": "Engineering (Chelsea Hohmann)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -177,7 +177,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-003",
-          "teamDisplayName": "CX: Engineering (Chelsea Hohmann)",
+          "teamDisplayName": "Engineering (Chelsea Hohmann)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -191,7 +191,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-003",
-          "teamDisplayName": "CX: Engineering (Chelsea Hohmann)",
+          "teamDisplayName": "Engineering (Chelsea Hohmann)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -205,7 +205,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-003",
-          "teamDisplayName": "CX: Engineering (Chelsea Hohmann)",
+          "teamDisplayName": "Engineering (Chelsea Hohmann)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -219,7 +219,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-003",
-          "teamDisplayName": "CX: Engineering (Chelsea Hohmann)",
+          "teamDisplayName": "Engineering (Chelsea Hohmann)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -233,7 +233,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-003",
-          "teamDisplayName": "CX: Engineering (Chelsea Hohmann)",
+          "teamDisplayName": "Engineering (Chelsea Hohmann)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -247,7 +247,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-004",
-          "teamDisplayName": "CX: Engineering (Anthony Hernandez)",
+          "teamDisplayName": "Engineering (Anthony Hernandez)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -261,7 +261,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-004",
-          "teamDisplayName": "CX: Engineering (Anthony Hernandez)",
+          "teamDisplayName": "Engineering (Anthony Hernandez)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -275,7 +275,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-004",
-          "teamDisplayName": "CX: Engineering (Anthony Hernandez)",
+          "teamDisplayName": "Engineering (Anthony Hernandez)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -289,7 +289,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-004",
-          "teamDisplayName": "CX: Engineering (Anthony Hernandez)",
+          "teamDisplayName": "Engineering (Anthony Hernandez)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -303,7 +303,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-004",
-          "teamDisplayName": "CX: Engineering (Anthony Hernandez)",
+          "teamDisplayName": "Engineering (Anthony Hernandez)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -317,7 +317,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-004",
-          "teamDisplayName": "CX: Engineering (Anthony Hernandez)",
+          "teamDisplayName": "Engineering (Anthony Hernandez)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -331,7 +331,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-005",
-          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "teamDisplayName": "Product (Kara Gillis)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -345,7 +345,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-005",
-          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "teamDisplayName": "Product (Kara Gillis)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -359,7 +359,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-005",
-          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "teamDisplayName": "Product (Kara Gillis)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -373,7 +373,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-005",
-          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "teamDisplayName": "Product (Kara Gillis)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -387,7 +387,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-005",
-          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "teamDisplayName": "Product (Kara Gillis)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -401,7 +401,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-005",
-          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "teamDisplayName": "Product (Kara Gillis)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -415,7 +415,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-005",
-          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "teamDisplayName": "Product (Kara Gillis)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -429,7 +429,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-005",
-          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "teamDisplayName": "Product (Kara Gillis)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -443,7 +443,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-005",
-          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "teamDisplayName": "Product (Kara Gillis)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -457,7 +457,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-005",
-          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "teamDisplayName": "Product (Kara Gillis)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -471,7 +471,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-005",
-          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "teamDisplayName": "Product (Kara Gillis)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -485,7 +485,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-006",
-          "teamDisplayName": "CX: Executive",
+          "teamDisplayName": "Executive",
           "referenceID": "NONE"
         }
       ]
@@ -499,7 +499,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-007",
-          "teamDisplayName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+          "teamDisplayName": "Strategic Initiatives (Cristina Buenahora Bustamante)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -513,7 +513,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-007",
-          "teamDisplayName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+          "teamDisplayName": "Strategic Initiatives (Cristina Buenahora Bustamante)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -527,7 +527,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-007",
-          "teamDisplayName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+          "teamDisplayName": "Strategic Initiatives (Cristina Buenahora Bustamante)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -541,7 +541,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-007",
-          "teamDisplayName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+          "teamDisplayName": "Strategic Initiatives (Cristina Buenahora Bustamante)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -555,7 +555,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-007",
-          "teamDisplayName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+          "teamDisplayName": "Strategic Initiatives (Cristina Buenahora Bustamante)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -569,7 +569,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-007",
-          "teamDisplayName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+          "teamDisplayName": "Strategic Initiatives (Cristina Buenahora Bustamante)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -583,7 +583,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-007",
-          "teamDisplayName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+          "teamDisplayName": "Strategic Initiatives (Cristina Buenahora Bustamante)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -597,7 +597,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-008",
-          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "teamDisplayName": "Revenue Operations (Matt McGonegle)",
           "referenceID": "WORKTEAM-1-007"
         }
       ]
@@ -611,7 +611,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-008",
-          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "teamDisplayName": "Revenue Operations (Matt McGonegle)",
           "referenceID": "WORKTEAM-1-007"
         }
       ]
@@ -625,7 +625,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-008",
-          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "teamDisplayName": "Revenue Operations (Matt McGonegle)",
           "referenceID": "WORKTEAM-1-007"
         }
       ]
@@ -639,7 +639,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-008",
-          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "teamDisplayName": "Revenue Operations (Matt McGonegle)",
           "referenceID": "WORKTEAM-1-007"
         }
       ]
@@ -653,7 +653,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-008",
-          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "teamDisplayName": "Revenue Operations (Matt McGonegle)",
           "referenceID": "WORKTEAM-1-007"
         }
       ]
@@ -667,7 +667,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-008",
-          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "teamDisplayName": "Revenue Operations (Matt McGonegle)",
           "referenceID": "WORKTEAM-1-007"
         }
       ]
@@ -681,7 +681,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-008",
-          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "teamDisplayName": "Revenue Operations (Matt McGonegle)",
           "referenceID": "WORKTEAM-1-007"
         }
       ]
@@ -695,7 +695,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-008",
-          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "teamDisplayName": "Revenue Operations (Matt McGonegle)",
           "referenceID": "WORKTEAM-1-007"
         }
       ]
@@ -709,7 +709,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-006",
-          "teamDisplayName": "CX: Executive",
+          "teamDisplayName": "Executive",
           "referenceID": "NONE"
         }
       ]
@@ -723,7 +723,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-009",
-          "teamDisplayName": "CX: Finance (Evan Pincus)",
+          "teamDisplayName": "Finance (Evan Pincus)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -737,7 +737,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-009",
-          "teamDisplayName": "CX: Finance (Evan Pincus)",
+          "teamDisplayName": "Finance (Evan Pincus)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -751,7 +751,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-009",
-          "teamDisplayName": "CX: Finance (Evan Pincus)",
+          "teamDisplayName": "Finance (Evan Pincus)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -765,7 +765,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-010",
-          "teamDisplayName": "CX: People & Talent (Kenji Porter)",
+          "teamDisplayName": "People & Talent (Kenji Porter)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -779,7 +779,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-010",
-          "teamDisplayName": "CX: People & Talent (Kenji Porter)",
+          "teamDisplayName": "People & Talent (Kenji Porter)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -793,7 +793,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-006",
-          "teamDisplayName": "CX: Executive",
+          "teamDisplayName": "Executive",
           "referenceID": "NONE"
         }
       ]
@@ -807,7 +807,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-011",
-          "teamDisplayName": "CX: Customer Experience (Roshni Sondhi)",
+          "teamDisplayName": "Customer Experience (Roshni Sondhi)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -821,7 +821,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-012",
-          "teamDisplayName": "CX: Customer Education (Taylor Schmidt)",
+          "teamDisplayName": "Customer Education (Taylor Schmidt)",
           "referenceID": "WORKTEAM-1-011"
         }
       ]
@@ -835,7 +835,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-012",
-          "teamDisplayName": "CX: Customer Education (Taylor Schmidt)",
+          "teamDisplayName": "Customer Education (Taylor Schmidt)",
           "referenceID": "WORKTEAM-1-011"
         }
       ]
@@ -849,7 +849,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-012",
-          "teamDisplayName": "CX: Customer Education (Taylor Schmidt)",
+          "teamDisplayName": "Customer Education (Taylor Schmidt)",
           "referenceID": "WORKTEAM-1-011"
         }
       ]
@@ -863,7 +863,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-013",
-          "teamDisplayName": "CX: Customer Engineering (Stephanie Cantaley)",
+          "teamDisplayName": "Customer Engineering (Stephanie Cantaley)",
           "referenceID": "WORKTEAM-1-012"
         }
       ]
@@ -877,7 +877,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-013",
-          "teamDisplayName": "CX: Customer Engineering (Stephanie Cantaley)",
+          "teamDisplayName": "Customer Engineering (Stephanie Cantaley)",
           "referenceID": "WORKTEAM-1-012"
         }
       ]
@@ -891,7 +891,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-013",
-          "teamDisplayName": "CX: Customer Engineering (Stephanie Cantaley)",
+          "teamDisplayName": "Customer Engineering (Stephanie Cantaley)",
           "referenceID": "WORKTEAM-1-012"
         }
       ]
@@ -905,7 +905,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-014",
-          "teamDisplayName": "CX: Customer Success (Josh Somerville)",
+          "teamDisplayName": "Customer Success (Josh Somerville)",
           "referenceID": "WORKTEAM-1-011"
         }
       ]
@@ -919,7 +919,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-014",
-          "teamDisplayName": "CX: Customer Success (Josh Somerville)",
+          "teamDisplayName": "Customer Success (Josh Somerville)",
           "referenceID": "WORKTEAM-1-011"
         }
       ]
@@ -933,7 +933,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-014",
-          "teamDisplayName": "CX: Customer Success (Josh Somerville)",
+          "teamDisplayName": "Customer Success (Josh Somerville)",
           "referenceID": "WORKTEAM-1-011"
         }
       ]
@@ -947,7 +947,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-014",
-          "teamDisplayName": "CX: Customer Success (Josh Somerville)",
+          "teamDisplayName": "Customer Success (Josh Somerville)",
           "referenceID": "WORKTEAM-1-011"
         }
       ]
@@ -961,7 +961,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-014",
-          "teamDisplayName": "CX: Customer Success (Josh Somerville)",
+          "teamDisplayName": "Customer Success (Josh Somerville)",
           "referenceID": "WORKTEAM-1-011"
         }
       ]
@@ -975,7 +975,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-014",
-          "teamDisplayName": "CX: Customer Success (Josh Somerville)",
+          "teamDisplayName": "Customer Success (Josh Somerville)",
           "referenceID": "WORKTEAM-1-011"
         }
       ]
@@ -989,7 +989,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-011",
-          "teamDisplayName": "CX: Customer Experience (Roshni Sondhi)",
+          "teamDisplayName": "Customer Experience (Roshni Sondhi)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -1003,7 +1003,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-015",
-          "teamDisplayName": "CX: Sales (Michael Connell)",
+          "teamDisplayName": "Sales (Michael Connell)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -1017,7 +1017,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-015",
-          "teamDisplayName": "CX: Sales (Michael Connell)",
+          "teamDisplayName": "Sales (Michael Connell)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -1031,7 +1031,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-015",
-          "teamDisplayName": "CX: Sales (Michael Connell)",
+          "teamDisplayName": "Sales (Michael Connell)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -1045,7 +1045,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-015",
-          "teamDisplayName": "CX: Sales (Michael Connell)",
+          "teamDisplayName": "Sales (Michael Connell)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -1059,7 +1059,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-015",
-          "teamDisplayName": "CX: Sales (Michael Connell)",
+          "teamDisplayName": "Sales (Michael Connell)",
           "referenceID": "WORKTEAM-1-006"
         }
       ]
@@ -1073,7 +1073,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-016",
-          "teamDisplayName": "CX: Sales Engineering (Bradley Sauln)",
+          "teamDisplayName": "Sales Engineering (Bradley Sauln)",
           "referenceID": "WORKTEAM-1-015"
         }
       ]
@@ -1087,7 +1087,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-016",
-          "teamDisplayName": "CX: Sales Engineering (Bradley Sauln)",
+          "teamDisplayName": "Sales Engineering (Bradley Sauln)",
           "referenceID": "WORKTEAM-1-015"
         }
       ]
@@ -1101,7 +1101,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-016",
-          "teamDisplayName": "CX: Sales Engineering (Bradley Sauln)",
+          "teamDisplayName": "Sales Engineering (Bradley Sauln)",
           "referenceID": "WORKTEAM-1-015"
         }
       ]
@@ -1115,7 +1115,7 @@
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-1-016",
-          "teamDisplayName": "CX: Sales Engineering (Bradley Sauln)",
+          "teamDisplayName": "Sales Engineering (Bradley Sauln)",
           "referenceID": "WORKTEAM-1-015"
         }
       ]
