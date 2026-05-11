@@ -16,9 +16,9 @@
       "firstName": "Shawn",
       "lastName": "Burke",
       "managersEmail": "ganesh.datta@cortex.io",
-      "teamId": "WORKTEAM-1-002",
+      "teamId": "WORKTEAM-1-001",
       "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-001"
+      "parentTeamId": "NONE"
     },
     {
       "email": "gabriel.villenave@cortex.io",
@@ -26,8 +26,8 @@
       "firstName": "Gabriel",
       "lastName": "Villenave",
       "managersEmail": "ganesh.datta@cortex.io",
-      "teamId": "WORKTEAM-1-003",
-      "teamName": "CX: Engineering",
+      "teamId": "WORKTEAM-1-002",
+      "teamName": "CX: Engineering (Gabriel Villenave)",
       "parentTeamId": "WORKTEAM-1-001"
     },
     {
@@ -36,9 +36,9 @@
       "firstName": "Kienan",
       "lastName": "Adams",
       "managersEmail": "gabriel.villenave@cortex.io",
-      "teamId": "WORKTEAM-1-004",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-003"
+      "teamId": "WORKTEAM-1-002",
+      "teamName": "CX: Engineering (Gabriel Villenave)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "haowen.chan@cortex.io",
@@ -46,9 +46,9 @@
       "firstName": "Haowen",
       "lastName": "Chan",
       "managersEmail": "gabriel.villenave@cortex.io",
-      "teamId": "WORKTEAM-1-005",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-003"
+      "teamId": "WORKTEAM-1-002",
+      "teamName": "CX: Engineering (Gabriel Villenave)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "doug.cooper@cortex.io",
@@ -56,9 +56,9 @@
       "firstName": "Doug",
       "lastName": "Cooper",
       "managersEmail": "gabriel.villenave@cortex.io",
-      "teamId": "WORKTEAM-1-006",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-003"
+      "teamId": "WORKTEAM-1-002",
+      "teamName": "CX: Engineering (Gabriel Villenave)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "andrew.frieze@cortex.io",
@@ -66,9 +66,9 @@
       "firstName": "Andrew",
       "lastName": "Frieze",
       "managersEmail": "gabriel.villenave@cortex.io",
-      "teamId": "WORKTEAM-1-007",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-003"
+      "teamId": "WORKTEAM-1-002",
+      "teamName": "CX: Engineering (Gabriel Villenave)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "ryan.chang@cortex.io",
@@ -76,9 +76,9 @@
       "firstName": "Ryan",
       "lastName": "Chang",
       "managersEmail": "gabriel.villenave@cortex.io",
-      "teamId": "WORKTEAM-1-008",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-003"
+      "teamId": "WORKTEAM-1-002",
+      "teamName": "CX: Engineering (Gabriel Villenave)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "dan.schuman@cortex.io",
@@ -86,9 +86,9 @@
       "firstName": "Dan",
       "lastName": "Schuman",
       "managersEmail": "gabriel.villenave@cortex.io",
-      "teamId": "WORKTEAM-1-009",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-003"
+      "teamId": "WORKTEAM-1-002",
+      "teamName": "CX: Engineering (Gabriel Villenave)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "jaymes.winger@cortex.io",
@@ -96,9 +96,9 @@
       "firstName": "Jaymes",
       "lastName": "Winger",
       "managersEmail": "gabriel.villenave@cortex.io",
-      "teamId": "WORKTEAM-1-010",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-003"
+      "teamId": "WORKTEAM-1-002",
+      "teamName": "CX: Engineering (Gabriel Villenave)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "roland.schulz@cortex.io",
@@ -106,9 +106,9 @@
       "firstName": "Roland",
       "lastName": "Schulz",
       "managersEmail": "gabriel.villenave@cortex.io",
-      "teamId": "WORKTEAM-1-011",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-003"
+      "teamId": "WORKTEAM-1-002",
+      "teamName": "CX: Engineering (Gabriel Villenave)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "chelsea.hohmann@cortex.io",
@@ -116,8 +116,8 @@
       "firstName": "Chelsea",
       "lastName": "Hohmann",
       "managersEmail": "ganesh.datta@cortex.io",
-      "teamId": "WORKTEAM-1-012",
-      "teamName": "CX: Engineering",
+      "teamId": "WORKTEAM-1-003",
+      "teamName": "CX: Engineering (Chelsea Hohmann)",
       "parentTeamId": "WORKTEAM-1-001"
     },
     {
@@ -126,9 +126,9 @@
       "firstName": "Jason",
       "lastName": "Brown",
       "managersEmail": "chelsea.hohmann@cortex.io",
-      "teamId": "WORKTEAM-1-013",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-012"
+      "teamId": "WORKTEAM-1-003",
+      "teamName": "CX: Engineering (Chelsea Hohmann)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "ashir.amin@cortex.io",
@@ -136,9 +136,9 @@
       "firstName": "Ashir",
       "lastName": "Amin",
       "managersEmail": "chelsea.hohmann@cortex.io",
-      "teamId": "WORKTEAM-1-014",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-012"
+      "teamId": "WORKTEAM-1-003",
+      "teamName": "CX: Engineering (Chelsea Hohmann)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "aaron.wirick@cortex.io",
@@ -146,9 +146,9 @@
       "firstName": "Aaron",
       "lastName": "Wirick",
       "managersEmail": "chelsea.hohmann@cortex.io",
-      "teamId": "WORKTEAM-1-015",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-012"
+      "teamId": "WORKTEAM-1-003",
+      "teamName": "CX: Engineering (Chelsea Hohmann)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "keith.zeto@cortex.io",
@@ -156,9 +156,9 @@
       "firstName": "Keith",
       "lastName": "Zeto",
       "managersEmail": "chelsea.hohmann@cortex.io",
-      "teamId": "WORKTEAM-1-016",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-012"
+      "teamId": "WORKTEAM-1-003",
+      "teamName": "CX: Engineering (Chelsea Hohmann)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "ryan.duffin@cortex.io",
@@ -166,9 +166,9 @@
       "firstName": "Ryan",
       "lastName": "Duffin",
       "managersEmail": "chelsea.hohmann@cortex.io",
-      "teamId": "WORKTEAM-1-017",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-012"
+      "teamId": "WORKTEAM-1-003",
+      "teamName": "CX: Engineering (Chelsea Hohmann)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "anthony.hernandez@cortex.io",
@@ -176,8 +176,8 @@
       "firstName": "Anthony",
       "lastName": "Hernandez",
       "managersEmail": "ganesh.datta@cortex.io",
-      "teamId": "WORKTEAM-1-018",
-      "teamName": "CX: Engineering",
+      "teamId": "WORKTEAM-1-004",
+      "teamName": "CX: Engineering (Anthony Hernandez)",
       "parentTeamId": "WORKTEAM-1-001"
     },
     {
@@ -186,9 +186,9 @@
       "firstName": "Ryan",
       "lastName": "Doucette",
       "managersEmail": "anthony.hernandez@cortex.io",
-      "teamId": "WORKTEAM-1-019",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-018"
+      "teamId": "WORKTEAM-1-004",
+      "teamName": "CX: Engineering (Anthony Hernandez)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "hanna.vigil@cortex.io",
@@ -196,9 +196,9 @@
       "firstName": "Hanna",
       "lastName": "Vigil",
       "managersEmail": "anthony.hernandez@cortex.io",
-      "teamId": "WORKTEAM-1-020",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-018"
+      "teamId": "WORKTEAM-1-004",
+      "teamName": "CX: Engineering (Anthony Hernandez)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "sarika.halarnakar@cortex.io",
@@ -206,9 +206,9 @@
       "firstName": "Sarika",
       "lastName": "Halarnakar",
       "managersEmail": "anthony.hernandez@cortex.io",
-      "teamId": "WORKTEAM-1-021",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-018"
+      "teamId": "WORKTEAM-1-004",
+      "teamName": "CX: Engineering (Anthony Hernandez)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "arkadiusz.szarama@cortex.io",
@@ -216,9 +216,9 @@
       "firstName": "Arkadiusz",
       "lastName": "Szarama",
       "managersEmail": "anthony.hernandez@cortex.io",
-      "teamId": "WORKTEAM-1-022",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-018"
+      "teamId": "WORKTEAM-1-004",
+      "teamName": "CX: Engineering (Anthony Hernandez)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "miko\u0142aj.st\u0119pniewski@cortex.io",
@@ -226,9 +226,9 @@
       "firstName": "Miko\u0142aj",
       "lastName": "St\u0119pniewski",
       "managersEmail": "anthony.hernandez@cortex.io",
-      "teamId": "WORKTEAM-1-023",
-      "teamName": "CX: Engineering",
-      "parentTeamId": "WORKTEAM-1-018"
+      "teamId": "WORKTEAM-1-004",
+      "teamName": "CX: Engineering (Anthony Hernandez)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "kara.gillis@cortex.io",
@@ -236,8 +236,8 @@
       "firstName": "Kara",
       "lastName": "Gillis",
       "managersEmail": "ganesh.datta@cortex.io",
-      "teamId": "WORKTEAM-1-024",
-      "teamName": "CX: Product",
+      "teamId": "WORKTEAM-1-005",
+      "teamName": "CX: Product (Kara Gillis)",
       "parentTeamId": "WORKTEAM-1-001"
     },
     {
@@ -246,9 +246,9 @@
       "firstName": "Jon",
       "lastName": "Brick",
       "managersEmail": "kara.gillis@cortex.io",
-      "teamId": "WORKTEAM-1-025",
-      "teamName": "CX: Design",
-      "parentTeamId": "WORKTEAM-1-024"
+      "teamId": "WORKTEAM-1-005",
+      "teamName": "CX: Product (Kara Gillis)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "matt.castillo@cortex.io",
@@ -256,9 +256,9 @@
       "firstName": "Matt",
       "lastName": "Castillo",
       "managersEmail": "kara.gillis@cortex.io",
-      "teamId": "WORKTEAM-1-026",
-      "teamName": "CX: Design",
-      "parentTeamId": "WORKTEAM-1-024"
+      "teamId": "WORKTEAM-1-005",
+      "teamName": "CX: Product (Kara Gillis)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "metacarbon@cortex.io",
@@ -266,9 +266,9 @@
       "firstName": "Metacarbon",
       "lastName": "",
       "managersEmail": "kara.gillis@cortex.io",
-      "teamId": "WORKTEAM-1-027",
-      "teamName": "CX: Design",
-      "parentTeamId": "WORKTEAM-1-024"
+      "teamId": "WORKTEAM-1-005",
+      "teamName": "CX: Product (Kara Gillis)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "mykola.sem@cortex.io",
@@ -276,9 +276,9 @@
       "firstName": "Mykola",
       "lastName": "Sem",
       "managersEmail": "kara.gillis@cortex.io",
-      "teamId": "WORKTEAM-1-028",
-      "teamName": "CX: Design",
-      "parentTeamId": "WORKTEAM-1-024"
+      "teamId": "WORKTEAM-1-005",
+      "teamName": "CX: Product (Kara Gillis)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "max.moskalenko@cortex.io",
@@ -286,9 +286,9 @@
       "firstName": "Max",
       "lastName": "Moskalenko",
       "managersEmail": "kara.gillis@cortex.io",
-      "teamId": "WORKTEAM-1-029",
-      "teamName": "CX: Design",
-      "parentTeamId": "WORKTEAM-1-024"
+      "teamId": "WORKTEAM-1-005",
+      "teamName": "CX: Product (Kara Gillis)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "metacarbon@cortex.io",
@@ -296,9 +296,9 @@
       "firstName": "metacarbon",
       "lastName": "",
       "managersEmail": "kara.gillis@cortex.io",
-      "teamId": "WORKTEAM-1-030",
-      "teamName": "CX: Team metacarbon",
-      "parentTeamId": "WORKTEAM-1-024"
+      "teamId": "WORKTEAM-1-005",
+      "teamName": "CX: Product (Kara Gillis)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "oleh.shydlovskyi@cortex.io",
@@ -306,9 +306,9 @@
       "firstName": "Oleh",
       "lastName": "Shydlovskyi",
       "managersEmail": "kara.gillis@cortex.io",
-      "teamId": "WORKTEAM-1-031",
-      "teamName": "CX: Design",
-      "parentTeamId": "WORKTEAM-1-024"
+      "teamId": "WORKTEAM-1-005",
+      "teamName": "CX: Product (Kara Gillis)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "oleh.gavara@cortex.io",
@@ -316,9 +316,9 @@
       "firstName": "Oleh",
       "lastName": "Gavara",
       "managersEmail": "kara.gillis@cortex.io",
-      "teamId": "WORKTEAM-1-032",
-      "teamName": "CX: Design",
-      "parentTeamId": "WORKTEAM-1-024"
+      "teamId": "WORKTEAM-1-005",
+      "teamName": "CX: Product (Kara Gillis)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "christine.byun@cortex.io",
@@ -326,9 +326,9 @@
       "firstName": "Christine",
       "lastName": "Byun",
       "managersEmail": "kara.gillis@cortex.io",
-      "teamId": "WORKTEAM-1-033",
-      "teamName": "CX: Product",
-      "parentTeamId": "WORKTEAM-1-024"
+      "teamId": "WORKTEAM-1-005",
+      "teamName": "CX: Product (Kara Gillis)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "madison.unell@cortex.io",
@@ -336,9 +336,9 @@
       "firstName": "Madison",
       "lastName": "Unell",
       "managersEmail": "kara.gillis@cortex.io",
-      "teamId": "WORKTEAM-1-034",
-      "teamName": "CX: Product",
-      "parentTeamId": "WORKTEAM-1-024"
+      "teamId": "WORKTEAM-1-005",
+      "teamName": "CX: Product (Kara Gillis)",
+      "parentTeamId": "WORKTEAM-1-001"
     },
     {
       "email": "anish.dhar@cortex.io",
@@ -346,7 +346,7 @@
       "firstName": "Anish",
       "lastName": "Dhar",
       "managersEmail": "anish.dhar@cortex.io",
-      "teamId": "WORKTEAM-1-035",
+      "teamId": "WORKTEAM-1-006",
       "teamName": "CX: Executive",
       "parentTeamId": "NONE"
     },
@@ -356,9 +356,9 @@
       "firstName": "Cristina",
       "lastName": "Buenahora Bustamante",
       "managersEmail": "anish.dhar@cortex.io",
-      "teamId": "WORKTEAM-1-036",
-      "teamName": "CX: Strategic Initiatives",
-      "parentTeamId": "WORKTEAM-1-035"
+      "teamId": "WORKTEAM-1-007",
+      "teamName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "jillian.lykins@cortex.io",
@@ -366,9 +366,9 @@
       "firstName": "Jillian",
       "lastName": "Lykins",
       "managersEmail": "cristina.bustamante@cortex.io",
-      "teamId": "WORKTEAM-1-037",
-      "teamName": "CX: Strategic Initiatives",
-      "parentTeamId": "WORKTEAM-1-036"
+      "teamId": "WORKTEAM-1-007",
+      "teamName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "william.reid@cortex.io",
@@ -376,9 +376,9 @@
       "firstName": "William",
       "lastName": "Reid",
       "managersEmail": "cristina.bustamante@cortex.io",
-      "teamId": "WORKTEAM-1-038",
-      "teamName": "CX: Strategic Initiatives",
-      "parentTeamId": "WORKTEAM-1-036"
+      "teamId": "WORKTEAM-1-007",
+      "teamName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "tiffany.thain@cortex.io",
@@ -386,9 +386,9 @@
       "firstName": "Tiffany",
       "lastName": "Thain",
       "managersEmail": "cristina.bustamante@cortex.io",
-      "teamId": "WORKTEAM-1-039",
-      "teamName": "CX: Team Tiffany Thain",
-      "parentTeamId": "WORKTEAM-1-036"
+      "teamId": "WORKTEAM-1-007",
+      "teamName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "rich.moy@cortex.io",
@@ -396,9 +396,9 @@
       "firstName": "Rich",
       "lastName": "Moy",
       "managersEmail": "cristina.bustamante@cortex.io",
-      "teamId": "WORKTEAM-1-040",
-      "teamName": "CX: Content & Marketing",
-      "parentTeamId": "WORKTEAM-1-036"
+      "teamId": "WORKTEAM-1-007",
+      "teamName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "skyler.wuolle@cortex.io",
@@ -406,9 +406,9 @@
       "firstName": "Skyler",
       "lastName": "Wuolle",
       "managersEmail": "cristina.bustamante@cortex.io",
-      "teamId": "WORKTEAM-1-041",
-      "teamName": "CX: Product Marketing",
-      "parentTeamId": "WORKTEAM-1-036"
+      "teamId": "WORKTEAM-1-007",
+      "teamName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "sankeerti.haniyur@cortex.io",
@@ -416,9 +416,9 @@
       "firstName": "Sankeerti",
       "lastName": "Haniyur",
       "managersEmail": "cristina.bustamante@cortex.io",
-      "teamId": "WORKTEAM-1-042",
-      "teamName": "CX: Data Science",
-      "parentTeamId": "WORKTEAM-1-036"
+      "teamId": "WORKTEAM-1-007",
+      "teamName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "matt.mcgonegle@cortex.io",
@@ -426,9 +426,9 @@
       "firstName": "Matt",
       "lastName": "McGonegle",
       "managersEmail": "cristina.bustamante@cortex.io",
-      "teamId": "WORKTEAM-1-043",
-      "teamName": "CX: Revenue Operations",
-      "parentTeamId": "WORKTEAM-1-036"
+      "teamId": "WORKTEAM-1-008",
+      "teamName": "CX: Revenue Operations (Matt McGonegle)",
+      "parentTeamId": "WORKTEAM-1-007"
     },
     {
       "email": "samuel.rice@cortex.io",
@@ -436,9 +436,9 @@
       "firstName": "Samuel",
       "lastName": "Rice",
       "managersEmail": "matt.mcgonegle@cortex.io",
-      "teamId": "WORKTEAM-1-044",
-      "teamName": "CX: Business Development",
-      "parentTeamId": "WORKTEAM-1-043"
+      "teamId": "WORKTEAM-1-008",
+      "teamName": "CX: Revenue Operations (Matt McGonegle)",
+      "parentTeamId": "WORKTEAM-1-007"
     },
     {
       "email": "zach.nguyen@cortex.io",
@@ -446,9 +446,9 @@
       "firstName": "Zach",
       "lastName": "Nguyen",
       "managersEmail": "matt.mcgonegle@cortex.io",
-      "teamId": "WORKTEAM-1-045",
-      "teamName": "CX: Business Development",
-      "parentTeamId": "WORKTEAM-1-043"
+      "teamId": "WORKTEAM-1-008",
+      "teamName": "CX: Revenue Operations (Matt McGonegle)",
+      "parentTeamId": "WORKTEAM-1-007"
     },
     {
       "email": "kevin.giglio@cortex.io",
@@ -456,9 +456,9 @@
       "firstName": "Kevin",
       "lastName": "Giglio",
       "managersEmail": "matt.mcgonegle@cortex.io",
-      "teamId": "WORKTEAM-1-046",
-      "teamName": "CX: Business Development",
-      "parentTeamId": "WORKTEAM-1-043"
+      "teamId": "WORKTEAM-1-008",
+      "teamName": "CX: Revenue Operations (Matt McGonegle)",
+      "parentTeamId": "WORKTEAM-1-007"
     },
     {
       "email": "gwyn.barry@cortex.io",
@@ -466,9 +466,9 @@
       "firstName": "Gwyn",
       "lastName": "Barry",
       "managersEmail": "matt.mcgonegle@cortex.io",
-      "teamId": "WORKTEAM-1-047",
-      "teamName": "CX: Business Development",
-      "parentTeamId": "WORKTEAM-1-043"
+      "teamId": "WORKTEAM-1-008",
+      "teamName": "CX: Revenue Operations (Matt McGonegle)",
+      "parentTeamId": "WORKTEAM-1-007"
     },
     {
       "email": "alexandra.traylor@cortex.io",
@@ -476,9 +476,9 @@
       "firstName": "Alexandra",
       "lastName": "Traylor",
       "managersEmail": "matt.mcgonegle@cortex.io",
-      "teamId": "WORKTEAM-1-048",
-      "teamName": "CX: Business Development",
-      "parentTeamId": "WORKTEAM-1-043"
+      "teamId": "WORKTEAM-1-008",
+      "teamName": "CX: Revenue Operations (Matt McGonegle)",
+      "parentTeamId": "WORKTEAM-1-007"
     },
     {
       "email": "jacob.meyer@cortex.io",
@@ -486,9 +486,9 @@
       "firstName": "Jacob",
       "lastName": "Meyer",
       "managersEmail": "matt.mcgonegle@cortex.io",
-      "teamId": "WORKTEAM-1-049",
-      "teamName": "CX: Revenue Operations",
-      "parentTeamId": "WORKTEAM-1-043"
+      "teamId": "WORKTEAM-1-008",
+      "teamName": "CX: Revenue Operations (Matt McGonegle)",
+      "parentTeamId": "WORKTEAM-1-007"
     },
     {
       "email": "joseph.deville@cortex.io",
@@ -496,9 +496,9 @@
       "firstName": "Joseph",
       "lastName": "Deville",
       "managersEmail": "matt.mcgonegle@cortex.io",
-      "teamId": "WORKTEAM-1-050",
-      "teamName": "CX: Revenue Operations",
-      "parentTeamId": "WORKTEAM-1-043"
+      "teamId": "WORKTEAM-1-008",
+      "teamName": "CX: Revenue Operations (Matt McGonegle)",
+      "parentTeamId": "WORKTEAM-1-007"
     },
     {
       "email": "nima.motiee@cortex.io",
@@ -506,9 +506,9 @@
       "firstName": "Nima",
       "lastName": "Motiee",
       "managersEmail": "anish.dhar@cortex.io",
-      "teamId": "WORKTEAM-1-051",
-      "teamName": "CX: Finance",
-      "parentTeamId": "WORKTEAM-1-035"
+      "teamId": "WORKTEAM-1-006",
+      "teamName": "CX: Executive",
+      "parentTeamId": "NONE"
     },
     {
       "email": "evan.pincus@cortex.io",
@@ -516,9 +516,9 @@
       "firstName": "Evan",
       "lastName": "Pincus",
       "managersEmail": "anish.dhar@cortex.io",
-      "teamId": "WORKTEAM-1-052",
-      "teamName": "CX: Finance",
-      "parentTeamId": "WORKTEAM-1-035"
+      "teamId": "WORKTEAM-1-009",
+      "teamName": "CX: Finance (Evan Pincus)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "gts@cortex.io",
@@ -526,9 +526,9 @@
       "firstName": "GTS",
       "lastName": "",
       "managersEmail": "evan.pincus@cortex.io",
-      "teamId": "WORKTEAM-1-053",
-      "teamName": "CX: IT",
-      "parentTeamId": "WORKTEAM-1-052"
+      "teamId": "WORKTEAM-1-009",
+      "teamName": "CX: Finance (Evan Pincus)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "cindy.chao@cortex.io",
@@ -536,9 +536,9 @@
       "firstName": "Cindy",
       "lastName": "Chao",
       "managersEmail": "evan.pincus@cortex.io",
-      "teamId": "WORKTEAM-1-054",
-      "teamName": "CX: Recruiting",
-      "parentTeamId": "WORKTEAM-1-052"
+      "teamId": "WORKTEAM-1-009",
+      "teamName": "CX: Finance (Evan Pincus)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "kenji.porter@cortex.io",
@@ -546,9 +546,9 @@
       "firstName": "Kenji",
       "lastName": "Porter",
       "managersEmail": "anish.dhar@cortex.io",
-      "teamId": "WORKTEAM-1-055",
-      "teamName": "CX: People & Talent",
-      "parentTeamId": "WORKTEAM-1-035"
+      "teamId": "WORKTEAM-1-010",
+      "teamName": "CX: People & Talent (Kenji Porter)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "cheryl.pieterse@cortex.io",
@@ -556,9 +556,9 @@
       "firstName": "Cheryl",
       "lastName": "Pieterse",
       "managersEmail": "kenji.porter@cortex.io",
-      "teamId": "WORKTEAM-1-056",
-      "teamName": "CX: People & Talent",
-      "parentTeamId": "WORKTEAM-1-055"
+      "teamId": "WORKTEAM-1-010",
+      "teamName": "CX: People & Talent (Kenji Porter)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "nikhil.unni@cortex.io",
@@ -566,9 +566,9 @@
       "firstName": "Nikhil",
       "lastName": "Unni",
       "managersEmail": "anish.dhar@cortex.io",
-      "teamId": "WORKTEAM-1-057",
-      "teamName": "CX: Architecture",
-      "parentTeamId": "WORKTEAM-1-035"
+      "teamId": "WORKTEAM-1-006",
+      "teamName": "CX: Executive",
+      "parentTeamId": "NONE"
     },
     {
       "email": "roshni.sondhi@cortex.io",
@@ -576,9 +576,9 @@
       "firstName": "Roshni",
       "lastName": "Sondhi",
       "managersEmail": "anish.dhar@cortex.io",
-      "teamId": "WORKTEAM-1-058",
-      "teamName": "CX: Customer Experience",
-      "parentTeamId": "WORKTEAM-1-035"
+      "teamId": "WORKTEAM-1-011",
+      "teamName": "CX: Customer Experience (Roshni Sondhi)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "taylor.schmidt@cortex.io",
@@ -586,9 +586,9 @@
       "firstName": "Taylor",
       "lastName": "Schmidt",
       "managersEmail": "roshni.sondhi@cortex.io",
-      "teamId": "WORKTEAM-1-059",
-      "teamName": "CX: Customer Education",
-      "parentTeamId": "WORKTEAM-1-058"
+      "teamId": "WORKTEAM-1-012",
+      "teamName": "CX: Customer Education (Taylor Schmidt)",
+      "parentTeamId": "WORKTEAM-1-011"
     },
     {
       "email": "lisa.bielik@cortex.io",
@@ -596,9 +596,9 @@
       "firstName": "Lisa",
       "lastName": "Bielik",
       "managersEmail": "taylor.schmidt@cortex.io",
-      "teamId": "WORKTEAM-1-060",
-      "teamName": "CX: Customer Education",
-      "parentTeamId": "WORKTEAM-1-059"
+      "teamId": "WORKTEAM-1-012",
+      "teamName": "CX: Customer Education (Taylor Schmidt)",
+      "parentTeamId": "WORKTEAM-1-011"
     },
     {
       "email": "hannah.schepers@cortex.io",
@@ -606,9 +606,9 @@
       "firstName": "Hannah",
       "lastName": "Schepers",
       "managersEmail": "taylor.schmidt@cortex.io",
-      "teamId": "WORKTEAM-1-061",
-      "teamName": "CX: Customer Engineering",
-      "parentTeamId": "WORKTEAM-1-059"
+      "teamId": "WORKTEAM-1-012",
+      "teamName": "CX: Customer Education (Taylor Schmidt)",
+      "parentTeamId": "WORKTEAM-1-011"
     },
     {
       "email": "stephanie.cantaley@cortex.io",
@@ -616,9 +616,9 @@
       "firstName": "Stephanie",
       "lastName": "Cantaley",
       "managersEmail": "taylor.schmidt@cortex.io",
-      "teamId": "WORKTEAM-1-062",
-      "teamName": "CX: Customer Engineering",
-      "parentTeamId": "WORKTEAM-1-059"
+      "teamId": "WORKTEAM-1-013",
+      "teamName": "CX: Customer Engineering (Stephanie Cantaley)",
+      "parentTeamId": "WORKTEAM-1-012"
     },
     {
       "email": "randy.herasme@cortex.io",
@@ -626,9 +626,9 @@
       "firstName": "Randy",
       "lastName": "Herasme",
       "managersEmail": "stephanie.cantaley@cortex.io",
-      "teamId": "WORKTEAM-1-063",
-      "teamName": "CX: Team Randy Herasme",
-      "parentTeamId": "WORKTEAM-1-062"
+      "teamId": "WORKTEAM-1-013",
+      "teamName": "CX: Customer Engineering (Stephanie Cantaley)",
+      "parentTeamId": "WORKTEAM-1-012"
     },
     {
       "email": "chase.lancaster@cortex.io",
@@ -636,9 +636,9 @@
       "firstName": "Chase",
       "lastName": "Lancaster",
       "managersEmail": "stephanie.cantaley@cortex.io",
-      "teamId": "WORKTEAM-1-064",
-      "teamName": "CX: Customer Engineering",
-      "parentTeamId": "WORKTEAM-1-062"
+      "teamId": "WORKTEAM-1-013",
+      "teamName": "CX: Customer Engineering (Stephanie Cantaley)",
+      "parentTeamId": "WORKTEAM-1-012"
     },
     {
       "email": "josh.somerville@cortex.io",
@@ -646,9 +646,9 @@
       "firstName": "Josh",
       "lastName": "Somerville",
       "managersEmail": "roshni.sondhi@cortex.io",
-      "teamId": "WORKTEAM-1-065",
-      "teamName": "CX: Customer Success",
-      "parentTeamId": "WORKTEAM-1-058"
+      "teamId": "WORKTEAM-1-014",
+      "teamName": "CX: Customer Success (Josh Somerville)",
+      "parentTeamId": "WORKTEAM-1-011"
     },
     {
       "email": "jesse.hinson@cortex.io",
@@ -656,9 +656,9 @@
       "firstName": "Jesse",
       "lastName": "Hinson",
       "managersEmail": "josh.somerville@cortex.io",
-      "teamId": "WORKTEAM-1-066",
-      "teamName": "CX: Customer Success",
-      "parentTeamId": "WORKTEAM-1-065"
+      "teamId": "WORKTEAM-1-014",
+      "teamName": "CX: Customer Success (Josh Somerville)",
+      "parentTeamId": "WORKTEAM-1-011"
     },
     {
       "email": "blake.given@cortex.io",
@@ -666,9 +666,9 @@
       "firstName": "Blake",
       "lastName": "Given",
       "managersEmail": "josh.somerville@cortex.io",
-      "teamId": "WORKTEAM-1-067",
-      "teamName": "CX: Customer Success",
-      "parentTeamId": "WORKTEAM-1-065"
+      "teamId": "WORKTEAM-1-014",
+      "teamName": "CX: Customer Success (Josh Somerville)",
+      "parentTeamId": "WORKTEAM-1-011"
     },
     {
       "email": "vanessa.quilliam@cortex.io",
@@ -676,9 +676,9 @@
       "firstName": "Vanessa",
       "lastName": "Quilliam",
       "managersEmail": "josh.somerville@cortex.io",
-      "teamId": "WORKTEAM-1-068",
-      "teamName": "CX: Customer Success",
-      "parentTeamId": "WORKTEAM-1-065"
+      "teamId": "WORKTEAM-1-014",
+      "teamName": "CX: Customer Success (Josh Somerville)",
+      "parentTeamId": "WORKTEAM-1-011"
     },
     {
       "email": "edward.spencer@cortex.io",
@@ -686,9 +686,9 @@
       "firstName": "Edward",
       "lastName": "Spencer",
       "managersEmail": "josh.somerville@cortex.io",
-      "teamId": "WORKTEAM-1-069",
-      "teamName": "CX: Customer Success",
-      "parentTeamId": "WORKTEAM-1-065"
+      "teamId": "WORKTEAM-1-014",
+      "teamName": "CX: Customer Success (Josh Somerville)",
+      "parentTeamId": "WORKTEAM-1-011"
     },
     {
       "email": "mike.mcnamara@cortex.io",
@@ -696,9 +696,9 @@
       "firstName": "Mike",
       "lastName": "McNamara",
       "managersEmail": "josh.somerville@cortex.io",
-      "teamId": "WORKTEAM-1-070",
-      "teamName": "CX: Customer Success",
-      "parentTeamId": "WORKTEAM-1-065"
+      "teamId": "WORKTEAM-1-014",
+      "teamName": "CX: Customer Success (Josh Somerville)",
+      "parentTeamId": "WORKTEAM-1-011"
     },
     {
       "email": "jeff.schnitter@cortex.io",
@@ -706,9 +706,9 @@
       "firstName": "Jeff",
       "lastName": "Schnitter",
       "managersEmail": "roshni.sondhi@cortex.io",
-      "teamId": "WORKTEAM-1-071",
-      "teamName": "CX: Solutions",
-      "parentTeamId": "WORKTEAM-1-058"
+      "teamId": "WORKTEAM-1-011",
+      "teamName": "CX: Customer Experience (Roshni Sondhi)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "michael.connell@cortex.io",
@@ -716,9 +716,9 @@
       "firstName": "Michael",
       "lastName": "Connell",
       "managersEmail": "anish.dhar@cortex.io",
-      "teamId": "WORKTEAM-1-072",
-      "teamName": "CX: Sales",
-      "parentTeamId": "WORKTEAM-1-035"
+      "teamId": "WORKTEAM-1-015",
+      "teamName": "CX: Sales (Michael Connell)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "tj.hartner@cortex.io",
@@ -726,9 +726,9 @@
       "firstName": "TJ",
       "lastName": "Hartner",
       "managersEmail": "michael.connell@cortex.io",
-      "teamId": "WORKTEAM-1-073",
-      "teamName": "CX: Sales",
-      "parentTeamId": "WORKTEAM-1-072"
+      "teamId": "WORKTEAM-1-015",
+      "teamName": "CX: Sales (Michael Connell)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "patrick.toomey@cortex.io",
@@ -736,9 +736,9 @@
       "firstName": "Patrick",
       "lastName": "Toomey",
       "managersEmail": "michael.connell@cortex.io",
-      "teamId": "WORKTEAM-1-074",
-      "teamName": "CX: Sales",
-      "parentTeamId": "WORKTEAM-1-072"
+      "teamId": "WORKTEAM-1-015",
+      "teamName": "CX: Sales (Michael Connell)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "ben.steen@cortex.io",
@@ -746,9 +746,9 @@
       "firstName": "Ben",
       "lastName": "Steen",
       "managersEmail": "michael.connell@cortex.io",
-      "teamId": "WORKTEAM-1-075",
-      "teamName": "CX: Sales",
-      "parentTeamId": "WORKTEAM-1-072"
+      "teamId": "WORKTEAM-1-015",
+      "teamName": "CX: Sales (Michael Connell)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "james.kettlewell@cortex.io",
@@ -756,9 +756,9 @@
       "firstName": "James",
       "lastName": "Kettlewell",
       "managersEmail": "michael.connell@cortex.io",
-      "teamId": "WORKTEAM-1-076",
-      "teamName": "CX: Sales",
-      "parentTeamId": "WORKTEAM-1-072"
+      "teamId": "WORKTEAM-1-015",
+      "teamName": "CX: Sales (Michael Connell)",
+      "parentTeamId": "WORKTEAM-1-006"
     },
     {
       "email": "bradley.sauln@cortex.io",
@@ -766,9 +766,9 @@
       "firstName": "Bradley",
       "lastName": "Sauln",
       "managersEmail": "michael.connell@cortex.io",
-      "teamId": "WORKTEAM-1-077",
-      "teamName": "CX: Sales Engineering",
-      "parentTeamId": "WORKTEAM-1-072"
+      "teamId": "WORKTEAM-1-016",
+      "teamName": "CX: Sales Engineering (Bradley Sauln)",
+      "parentTeamId": "WORKTEAM-1-015"
     },
     {
       "email": "colin.risler@cortex.io",
@@ -776,9 +776,9 @@
       "firstName": "Colin",
       "lastName": "Risler",
       "managersEmail": "bradley.sauln@cortex.io",
-      "teamId": "WORKTEAM-1-078",
-      "teamName": "CX: Sales Engineering",
-      "parentTeamId": "WORKTEAM-1-077"
+      "teamId": "WORKTEAM-1-016",
+      "teamName": "CX: Sales Engineering (Bradley Sauln)",
+      "parentTeamId": "WORKTEAM-1-015"
     },
     {
       "email": "jabed.amin@cortex.io",
@@ -786,9 +786,9 @@
       "firstName": "Jabed",
       "lastName": "Amin",
       "managersEmail": "bradley.sauln@cortex.io",
-      "teamId": "WORKTEAM-1-079",
-      "teamName": "CX: Sales Engineering",
-      "parentTeamId": "WORKTEAM-1-077"
+      "teamId": "WORKTEAM-1-016",
+      "teamName": "CX: Sales Engineering (Bradley Sauln)",
+      "parentTeamId": "WORKTEAM-1-015"
     },
     {
       "email": "becka.weemhoff@cortex.io",
@@ -796,9 +796,9 @@
       "firstName": "Becka",
       "lastName": "Weemhoff",
       "managersEmail": "bradley.sauln@cortex.io",
-      "teamId": "WORKTEAM-1-080",
-      "teamName": "CX: Sales Engineering",
-      "parentTeamId": "WORKTEAM-1-077"
+      "teamId": "WORKTEAM-1-016",
+      "teamName": "CX: Sales Engineering (Bradley Sauln)",
+      "parentTeamId": "WORKTEAM-1-015"
     }
   ]
 }

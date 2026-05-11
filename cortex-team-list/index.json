@@ -22,9 +22,9 @@
       "Managers_Email": "ganesh.datta@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-002",
+          "teamName": "WORKTEAM-1-001",
           "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-001"
+          "referenceID": "NONE"
         }
       ]
     },
@@ -36,8 +36,8 @@
       "Managers_Email": "ganesh.datta@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-003",
-          "teamDisplayName": "CX: Engineering",
+          "teamName": "WORKTEAM-1-002",
+          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -50,9 +50,9 @@
       "Managers_Email": "gabriel.villenave@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-004",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-003"
+          "teamName": "WORKTEAM-1-002",
+          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -64,9 +64,9 @@
       "Managers_Email": "gabriel.villenave@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-005",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-003"
+          "teamName": "WORKTEAM-1-002",
+          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -78,9 +78,9 @@
       "Managers_Email": "gabriel.villenave@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-006",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-003"
+          "teamName": "WORKTEAM-1-002",
+          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -92,9 +92,9 @@
       "Managers_Email": "gabriel.villenave@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-007",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-003"
+          "teamName": "WORKTEAM-1-002",
+          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -106,9 +106,9 @@
       "Managers_Email": "gabriel.villenave@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-008",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-003"
+          "teamName": "WORKTEAM-1-002",
+          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -120,9 +120,9 @@
       "Managers_Email": "gabriel.villenave@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-009",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-003"
+          "teamName": "WORKTEAM-1-002",
+          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -134,9 +134,9 @@
       "Managers_Email": "gabriel.villenave@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-010",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-003"
+          "teamName": "WORKTEAM-1-002",
+          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -148,9 +148,9 @@
       "Managers_Email": "gabriel.villenave@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-011",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-003"
+          "teamName": "WORKTEAM-1-002",
+          "teamDisplayName": "CX: Engineering (Gabriel Villenave)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -162,8 +162,8 @@
       "Managers_Email": "ganesh.datta@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-012",
-          "teamDisplayName": "CX: Engineering",
+          "teamName": "WORKTEAM-1-003",
+          "teamDisplayName": "CX: Engineering (Chelsea Hohmann)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -176,9 +176,9 @@
       "Managers_Email": "chelsea.hohmann@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-013",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-012"
+          "teamName": "WORKTEAM-1-003",
+          "teamDisplayName": "CX: Engineering (Chelsea Hohmann)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -190,9 +190,9 @@
       "Managers_Email": "chelsea.hohmann@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-014",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-012"
+          "teamName": "WORKTEAM-1-003",
+          "teamDisplayName": "CX: Engineering (Chelsea Hohmann)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -204,9 +204,9 @@
       "Managers_Email": "chelsea.hohmann@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-015",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-012"
+          "teamName": "WORKTEAM-1-003",
+          "teamDisplayName": "CX: Engineering (Chelsea Hohmann)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -218,9 +218,9 @@
       "Managers_Email": "chelsea.hohmann@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-016",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-012"
+          "teamName": "WORKTEAM-1-003",
+          "teamDisplayName": "CX: Engineering (Chelsea Hohmann)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -232,9 +232,9 @@
       "Managers_Email": "chelsea.hohmann@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-017",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-012"
+          "teamName": "WORKTEAM-1-003",
+          "teamDisplayName": "CX: Engineering (Chelsea Hohmann)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -246,8 +246,8 @@
       "Managers_Email": "ganesh.datta@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-018",
-          "teamDisplayName": "CX: Engineering",
+          "teamName": "WORKTEAM-1-004",
+          "teamDisplayName": "CX: Engineering (Anthony Hernandez)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -260,9 +260,9 @@
       "Managers_Email": "anthony.hernandez@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-019",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-018"
+          "teamName": "WORKTEAM-1-004",
+          "teamDisplayName": "CX: Engineering (Anthony Hernandez)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -274,9 +274,9 @@
       "Managers_Email": "anthony.hernandez@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-020",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-018"
+          "teamName": "WORKTEAM-1-004",
+          "teamDisplayName": "CX: Engineering (Anthony Hernandez)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -288,9 +288,9 @@
       "Managers_Email": "anthony.hernandez@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-021",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-018"
+          "teamName": "WORKTEAM-1-004",
+          "teamDisplayName": "CX: Engineering (Anthony Hernandez)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -302,9 +302,9 @@
       "Managers_Email": "anthony.hernandez@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-022",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-018"
+          "teamName": "WORKTEAM-1-004",
+          "teamDisplayName": "CX: Engineering (Anthony Hernandez)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -316,9 +316,9 @@
       "Managers_Email": "anthony.hernandez@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-023",
-          "teamDisplayName": "CX: Engineering",
-          "referenceID": "WORKTEAM-1-018"
+          "teamName": "WORKTEAM-1-004",
+          "teamDisplayName": "CX: Engineering (Anthony Hernandez)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -330,8 +330,8 @@
       "Managers_Email": "ganesh.datta@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-024",
-          "teamDisplayName": "CX: Product",
+          "teamName": "WORKTEAM-1-005",
+          "teamDisplayName": "CX: Product (Kara Gillis)",
           "referenceID": "WORKTEAM-1-001"
         }
       ]
@@ -344,9 +344,9 @@
       "Managers_Email": "kara.gillis@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-025",
-          "teamDisplayName": "CX: Design",
-          "referenceID": "WORKTEAM-1-024"
+          "teamName": "WORKTEAM-1-005",
+          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -358,9 +358,9 @@
       "Managers_Email": "kara.gillis@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-026",
-          "teamDisplayName": "CX: Design",
-          "referenceID": "WORKTEAM-1-024"
+          "teamName": "WORKTEAM-1-005",
+          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -372,9 +372,9 @@
       "Managers_Email": "kara.gillis@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-027",
-          "teamDisplayName": "CX: Design",
-          "referenceID": "WORKTEAM-1-024"
+          "teamName": "WORKTEAM-1-005",
+          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -386,9 +386,9 @@
       "Managers_Email": "kara.gillis@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-028",
-          "teamDisplayName": "CX: Design",
-          "referenceID": "WORKTEAM-1-024"
+          "teamName": "WORKTEAM-1-005",
+          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -400,9 +400,9 @@
       "Managers_Email": "kara.gillis@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-029",
-          "teamDisplayName": "CX: Design",
-          "referenceID": "WORKTEAM-1-024"
+          "teamName": "WORKTEAM-1-005",
+          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -414,9 +414,9 @@
       "Managers_Email": "kara.gillis@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-030",
-          "teamDisplayName": "CX: Team metacarbon",
-          "referenceID": "WORKTEAM-1-024"
+          "teamName": "WORKTEAM-1-005",
+          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -428,9 +428,9 @@
       "Managers_Email": "kara.gillis@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-031",
-          "teamDisplayName": "CX: Design",
-          "referenceID": "WORKTEAM-1-024"
+          "teamName": "WORKTEAM-1-005",
+          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -442,9 +442,9 @@
       "Managers_Email": "kara.gillis@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-032",
-          "teamDisplayName": "CX: Design",
-          "referenceID": "WORKTEAM-1-024"
+          "teamName": "WORKTEAM-1-005",
+          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -456,9 +456,9 @@
       "Managers_Email": "kara.gillis@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-033",
-          "teamDisplayName": "CX: Product",
-          "referenceID": "WORKTEAM-1-024"
+          "teamName": "WORKTEAM-1-005",
+          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -470,9 +470,9 @@
       "Managers_Email": "kara.gillis@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-034",
-          "teamDisplayName": "CX: Product",
-          "referenceID": "WORKTEAM-1-024"
+          "teamName": "WORKTEAM-1-005",
+          "teamDisplayName": "CX: Product (Kara Gillis)",
+          "referenceID": "WORKTEAM-1-001"
         }
       ]
     },
@@ -484,7 +484,7 @@
       "Managers_Email": "anish.dhar@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-035",
+          "teamName": "WORKTEAM-1-006",
           "teamDisplayName": "CX: Executive",
           "referenceID": "NONE"
         }
@@ -498,9 +498,9 @@
       "Managers_Email": "anish.dhar@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-036",
-          "teamDisplayName": "CX: Strategic Initiatives",
-          "referenceID": "WORKTEAM-1-035"
+          "teamName": "WORKTEAM-1-007",
+          "teamDisplayName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -512,9 +512,9 @@
       "Managers_Email": "cristina.bustamante@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-037",
-          "teamDisplayName": "CX: Strategic Initiatives",
-          "referenceID": "WORKTEAM-1-036"
+          "teamName": "WORKTEAM-1-007",
+          "teamDisplayName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -526,9 +526,9 @@
       "Managers_Email": "cristina.bustamante@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-038",
-          "teamDisplayName": "CX: Strategic Initiatives",
-          "referenceID": "WORKTEAM-1-036"
+          "teamName": "WORKTEAM-1-007",
+          "teamDisplayName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -540,9 +540,9 @@
       "Managers_Email": "cristina.bustamante@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-039",
-          "teamDisplayName": "CX: Team Tiffany Thain",
-          "referenceID": "WORKTEAM-1-036"
+          "teamName": "WORKTEAM-1-007",
+          "teamDisplayName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -554,9 +554,9 @@
       "Managers_Email": "cristina.bustamante@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-040",
-          "teamDisplayName": "CX: Content & Marketing",
-          "referenceID": "WORKTEAM-1-036"
+          "teamName": "WORKTEAM-1-007",
+          "teamDisplayName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -568,9 +568,9 @@
       "Managers_Email": "cristina.bustamante@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-041",
-          "teamDisplayName": "CX: Product Marketing",
-          "referenceID": "WORKTEAM-1-036"
+          "teamName": "WORKTEAM-1-007",
+          "teamDisplayName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -582,9 +582,9 @@
       "Managers_Email": "cristina.bustamante@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-042",
-          "teamDisplayName": "CX: Data Science",
-          "referenceID": "WORKTEAM-1-036"
+          "teamName": "WORKTEAM-1-007",
+          "teamDisplayName": "CX: Strategic Initiatives (Cristina Buenahora Bustamante)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -596,9 +596,9 @@
       "Managers_Email": "cristina.bustamante@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-043",
-          "teamDisplayName": "CX: Revenue Operations",
-          "referenceID": "WORKTEAM-1-036"
+          "teamName": "WORKTEAM-1-008",
+          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "referenceID": "WORKTEAM-1-007"
         }
       ]
     },
@@ -610,9 +610,9 @@
       "Managers_Email": "matt.mcgonegle@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-044",
-          "teamDisplayName": "CX: Business Development",
-          "referenceID": "WORKTEAM-1-043"
+          "teamName": "WORKTEAM-1-008",
+          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "referenceID": "WORKTEAM-1-007"
         }
       ]
     },
@@ -624,9 +624,9 @@
       "Managers_Email": "matt.mcgonegle@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-045",
-          "teamDisplayName": "CX: Business Development",
-          "referenceID": "WORKTEAM-1-043"
+          "teamName": "WORKTEAM-1-008",
+          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "referenceID": "WORKTEAM-1-007"
         }
       ]
     },
@@ -638,9 +638,9 @@
       "Managers_Email": "matt.mcgonegle@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-046",
-          "teamDisplayName": "CX: Business Development",
-          "referenceID": "WORKTEAM-1-043"
+          "teamName": "WORKTEAM-1-008",
+          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "referenceID": "WORKTEAM-1-007"
         }
       ]
     },
@@ -652,9 +652,9 @@
       "Managers_Email": "matt.mcgonegle@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-047",
-          "teamDisplayName": "CX: Business Development",
-          "referenceID": "WORKTEAM-1-043"
+          "teamName": "WORKTEAM-1-008",
+          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "referenceID": "WORKTEAM-1-007"
         }
       ]
     },
@@ -666,9 +666,9 @@
       "Managers_Email": "matt.mcgonegle@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-048",
-          "teamDisplayName": "CX: Business Development",
-          "referenceID": "WORKTEAM-1-043"
+          "teamName": "WORKTEAM-1-008",
+          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "referenceID": "WORKTEAM-1-007"
         }
       ]
     },
@@ -680,9 +680,9 @@
       "Managers_Email": "matt.mcgonegle@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-049",
-          "teamDisplayName": "CX: Revenue Operations",
-          "referenceID": "WORKTEAM-1-043"
+          "teamName": "WORKTEAM-1-008",
+          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "referenceID": "WORKTEAM-1-007"
         }
       ]
     },
@@ -694,9 +694,9 @@
       "Managers_Email": "matt.mcgonegle@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-050",
-          "teamDisplayName": "CX: Revenue Operations",
-          "referenceID": "WORKTEAM-1-043"
+          "teamName": "WORKTEAM-1-008",
+          "teamDisplayName": "CX: Revenue Operations (Matt McGonegle)",
+          "referenceID": "WORKTEAM-1-007"
         }
       ]
     },
@@ -708,9 +708,9 @@
       "Managers_Email": "anish.dhar@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-051",
-          "teamDisplayName": "CX: Finance",
-          "referenceID": "WORKTEAM-1-035"
+          "teamName": "WORKTEAM-1-006",
+          "teamDisplayName": "CX: Executive",
+          "referenceID": "NONE"
         }
       ]
     },
@@ -722,9 +722,9 @@
       "Managers_Email": "anish.dhar@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-052",
-          "teamDisplayName": "CX: Finance",
-          "referenceID": "WORKTEAM-1-035"
+          "teamName": "WORKTEAM-1-009",
+          "teamDisplayName": "CX: Finance (Evan Pincus)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -736,9 +736,9 @@
       "Managers_Email": "evan.pincus@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-053",
-          "teamDisplayName": "CX: IT",
-          "referenceID": "WORKTEAM-1-052"
+          "teamName": "WORKTEAM-1-009",
+          "teamDisplayName": "CX: Finance (Evan Pincus)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -750,9 +750,9 @@
       "Managers_Email": "evan.pincus@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-054",
-          "teamDisplayName": "CX: Recruiting",
-          "referenceID": "WORKTEAM-1-052"
+          "teamName": "WORKTEAM-1-009",
+          "teamDisplayName": "CX: Finance (Evan Pincus)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -764,9 +764,9 @@
       "Managers_Email": "anish.dhar@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-055",
-          "teamDisplayName": "CX: People & Talent",
-          "referenceID": "WORKTEAM-1-035"
+          "teamName": "WORKTEAM-1-010",
+          "teamDisplayName": "CX: People & Talent (Kenji Porter)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -778,9 +778,9 @@
       "Managers_Email": "kenji.porter@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-056",
-          "teamDisplayName": "CX: People & Talent",
-          "referenceID": "WORKTEAM-1-055"
+          "teamName": "WORKTEAM-1-010",
+          "teamDisplayName": "CX: People & Talent (Kenji Porter)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -792,9 +792,9 @@
       "Managers_Email": "anish.dhar@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-057",
-          "teamDisplayName": "CX: Architecture",
-          "referenceID": "WORKTEAM-1-035"
+          "teamName": "WORKTEAM-1-006",
+          "teamDisplayName": "CX: Executive",
+          "referenceID": "NONE"
         }
       ]
     },
@@ -806,9 +806,9 @@
       "Managers_Email": "anish.dhar@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-058",
-          "teamDisplayName": "CX: Customer Experience",
-          "referenceID": "WORKTEAM-1-035"
+          "teamName": "WORKTEAM-1-011",
+          "teamDisplayName": "CX: Customer Experience (Roshni Sondhi)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -820,9 +820,9 @@
       "Managers_Email": "roshni.sondhi@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-059",
-          "teamDisplayName": "CX: Customer Education",
-          "referenceID": "WORKTEAM-1-058"
+          "teamName": "WORKTEAM-1-012",
+          "teamDisplayName": "CX: Customer Education (Taylor Schmidt)",
+          "referenceID": "WORKTEAM-1-011"
         }
       ]
     },
@@ -834,9 +834,9 @@
       "Managers_Email": "taylor.schmidt@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-060",
-          "teamDisplayName": "CX: Customer Education",
-          "referenceID": "WORKTEAM-1-059"
+          "teamName": "WORKTEAM-1-012",
+          "teamDisplayName": "CX: Customer Education (Taylor Schmidt)",
+          "referenceID": "WORKTEAM-1-011"
         }
       ]
     },
@@ -848,9 +848,9 @@
       "Managers_Email": "taylor.schmidt@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-061",
-          "teamDisplayName": "CX: Customer Engineering",
-          "referenceID": "WORKTEAM-1-059"
+          "teamName": "WORKTEAM-1-012",
+          "teamDisplayName": "CX: Customer Education (Taylor Schmidt)",
+          "referenceID": "WORKTEAM-1-011"
         }
       ]
     },
@@ -862,9 +862,9 @@
       "Managers_Email": "taylor.schmidt@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-062",
-          "teamDisplayName": "CX: Customer Engineering",
-          "referenceID": "WORKTEAM-1-059"
+          "teamName": "WORKTEAM-1-013",
+          "teamDisplayName": "CX: Customer Engineering (Stephanie Cantaley)",
+          "referenceID": "WORKTEAM-1-012"
         }
       ]
     },
@@ -876,9 +876,9 @@
       "Managers_Email": "stephanie.cantaley@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-063",
-          "teamDisplayName": "CX: Team Randy Herasme",
-          "referenceID": "WORKTEAM-1-062"
+          "teamName": "WORKTEAM-1-013",
+          "teamDisplayName": "CX: Customer Engineering (Stephanie Cantaley)",
+          "referenceID": "WORKTEAM-1-012"
         }
       ]
     },
@@ -890,9 +890,9 @@
       "Managers_Email": "stephanie.cantaley@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-064",
-          "teamDisplayName": "CX: Customer Engineering",
-          "referenceID": "WORKTEAM-1-062"
+          "teamName": "WORKTEAM-1-013",
+          "teamDisplayName": "CX: Customer Engineering (Stephanie Cantaley)",
+          "referenceID": "WORKTEAM-1-012"
         }
       ]
     },
@@ -904,9 +904,9 @@
       "Managers_Email": "roshni.sondhi@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-065",
-          "teamDisplayName": "CX: Customer Success",
-          "referenceID": "WORKTEAM-1-058"
+          "teamName": "WORKTEAM-1-014",
+          "teamDisplayName": "CX: Customer Success (Josh Somerville)",
+          "referenceID": "WORKTEAM-1-011"
         }
       ]
     },
@@ -918,9 +918,9 @@
       "Managers_Email": "josh.somerville@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-066",
-          "teamDisplayName": "CX: Customer Success",
-          "referenceID": "WORKTEAM-1-065"
+          "teamName": "WORKTEAM-1-014",
+          "teamDisplayName": "CX: Customer Success (Josh Somerville)",
+          "referenceID": "WORKTEAM-1-011"
         }
       ]
     },
@@ -932,9 +932,9 @@
       "Managers_Email": "josh.somerville@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-067",
-          "teamDisplayName": "CX: Customer Success",
-          "referenceID": "WORKTEAM-1-065"
+          "teamName": "WORKTEAM-1-014",
+          "teamDisplayName": "CX: Customer Success (Josh Somerville)",
+          "referenceID": "WORKTEAM-1-011"
         }
       ]
     },
@@ -946,9 +946,9 @@
       "Managers_Email": "josh.somerville@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-068",
-          "teamDisplayName": "CX: Customer Success",
-          "referenceID": "WORKTEAM-1-065"
+          "teamName": "WORKTEAM-1-014",
+          "teamDisplayName": "CX: Customer Success (Josh Somerville)",
+          "referenceID": "WORKTEAM-1-011"
         }
       ]
     },
@@ -960,9 +960,9 @@
       "Managers_Email": "josh.somerville@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-069",
-          "teamDisplayName": "CX: Customer Success",
-          "referenceID": "WORKTEAM-1-065"
+          "teamName": "WORKTEAM-1-014",
+          "teamDisplayName": "CX: Customer Success (Josh Somerville)",
+          "referenceID": "WORKTEAM-1-011"
         }
       ]
     },
@@ -974,9 +974,9 @@
       "Managers_Email": "josh.somerville@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-070",
-          "teamDisplayName": "CX: Customer Success",
-          "referenceID": "WORKTEAM-1-065"
+          "teamName": "WORKTEAM-1-014",
+          "teamDisplayName": "CX: Customer Success (Josh Somerville)",
+          "referenceID": "WORKTEAM-1-011"
         }
       ]
     },
@@ -988,9 +988,9 @@
       "Managers_Email": "roshni.sondhi@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-071",
-          "teamDisplayName": "CX: Solutions",
-          "referenceID": "WORKTEAM-1-058"
+          "teamName": "WORKTEAM-1-011",
+          "teamDisplayName": "CX: Customer Experience (Roshni Sondhi)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -1002,9 +1002,9 @@
       "Managers_Email": "anish.dhar@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-072",
-          "teamDisplayName": "CX: Sales",
-          "referenceID": "WORKTEAM-1-035"
+          "teamName": "WORKTEAM-1-015",
+          "teamDisplayName": "CX: Sales (Michael Connell)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -1016,9 +1016,9 @@
       "Managers_Email": "michael.connell@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-073",
-          "teamDisplayName": "CX: Sales",
-          "referenceID": "WORKTEAM-1-072"
+          "teamName": "WORKTEAM-1-015",
+          "teamDisplayName": "CX: Sales (Michael Connell)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -1030,9 +1030,9 @@
       "Managers_Email": "michael.connell@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-074",
-          "teamDisplayName": "CX: Sales",
-          "referenceID": "WORKTEAM-1-072"
+          "teamName": "WORKTEAM-1-015",
+          "teamDisplayName": "CX: Sales (Michael Connell)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -1044,9 +1044,9 @@
       "Managers_Email": "michael.connell@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-075",
-          "teamDisplayName": "CX: Sales",
-          "referenceID": "WORKTEAM-1-072"
+          "teamName": "WORKTEAM-1-015",
+          "teamDisplayName": "CX: Sales (Michael Connell)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -1058,9 +1058,9 @@
       "Managers_Email": "michael.connell@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-076",
-          "teamDisplayName": "CX: Sales",
-          "referenceID": "WORKTEAM-1-072"
+          "teamName": "WORKTEAM-1-015",
+          "teamDisplayName": "CX: Sales (Michael Connell)",
+          "referenceID": "WORKTEAM-1-006"
         }
       ]
     },
@@ -1072,9 +1072,9 @@
       "Managers_Email": "michael.connell@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-077",
-          "teamDisplayName": "CX: Sales Engineering",
-          "referenceID": "WORKTEAM-1-072"
+          "teamName": "WORKTEAM-1-016",
+          "teamDisplayName": "CX: Sales Engineering (Bradley Sauln)",
+          "referenceID": "WORKTEAM-1-015"
         }
       ]
     },
@@ -1086,9 +1086,9 @@
       "Managers_Email": "bradley.sauln@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-078",
-          "teamDisplayName": "CX: Sales Engineering",
-          "referenceID": "WORKTEAM-1-077"
+          "teamName": "WORKTEAM-1-016",
+          "teamDisplayName": "CX: Sales Engineering (Bradley Sauln)",
+          "referenceID": "WORKTEAM-1-015"
         }
       ]
     },
@@ -1100,9 +1100,9 @@
       "Managers_Email": "bradley.sauln@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-079",
-          "teamDisplayName": "CX: Sales Engineering",
-          "referenceID": "WORKTEAM-1-077"
+          "teamName": "WORKTEAM-1-016",
+          "teamDisplayName": "CX: Sales Engineering (Bradley Sauln)",
+          "referenceID": "WORKTEAM-1-015"
         }
       ]
     },
@@ -1114,9 +1114,9 @@
       "Managers_Email": "bradley.sauln@cortex.io",
       "Workteam_Group": [
         {
-          "teamName": "WORKTEAM-1-080",
-          "teamDisplayName": "CX: Sales Engineering",
-          "referenceID": "WORKTEAM-1-077"
+          "teamName": "WORKTEAM-1-016",
+          "teamDisplayName": "CX: Sales Engineering (Bradley Sauln)",
+          "referenceID": "WORKTEAM-1-015"
         }
       ]
     }

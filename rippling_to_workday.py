@@ -171,15 +171,12 @@ KNOWN_TITLES = {
 def build_workday_report(people: list[dict], domain: str = "cortex.io") -> dict:
     """Convert flat people list with depth into Workday report format.
 
-    Each person gets their own unique team. parentTeamId always points
-    to the person's manager's teamId, matching the Pied Piper / Workday
-    supervisory org model.
+    Managers get their own team (named by their role/department).
+    ICs share their manager's team.
+    parentTeamId always points to the manager's manager's team.
     """
     entries = []
-    # Track the manager stack: depth -> person info
     manager_stack = {}
-    # Map email -> teamId for parent lookups
-    email_to_team = {}
     team_counter = 0
 
     # Fill in missing titles from known data
@@ -193,6 +190,20 @@ def build_workday_report(people: list[dict], domain: str = "cortex.io") -> dict:
         if min_depth > 0:
             for p in people:
                 p["depth"] -= min_depth
+
+    # Pass 1: identify who is a manager (has anyone at depth+1 after them)
+    managers = set()
+    for i, person in enumerate(people):
+        for j in range(i + 1, len(people)):
+            if people[j]["depth"] <= person["depth"]:
+                break
+            if people[j]["depth"] == person["depth"] + 1:
+                managers.add(person["name"])
+                break
+
+    # Pass 2: assign teams
+    # email -> {teamId, teamName, parentTeamId}
+    email_to_team = {}
 
     for person in people:
         depth = person["depth"]
@@ -208,6 +219,7 @@ def build_workday_report(people: list[dict], domain: str = "cortex.io") -> dict:
             last_name = " ".join(parts[1:])
 
         email = infer_email(name, domain)
+        is_manager = name in managers
 
         # Find manager: the most recent person at depth - 1
         manager_email = ""
@@ -217,29 +229,58 @@ def build_workday_report(people: list[dict], domain: str = "cortex.io") -> dict:
                     manager_email = manager_stack[d]["email"]
                     break
         else:
-            # Top-level: reports to self (Workday convention)
             manager_email = email
 
         # Update manager stack
         manager_stack[depth] = {"email": email, "name": name, "title": title}
-        # Clear deeper levels (they're no longer current ancestors)
         for d in list(manager_stack.keys()):
             if d > depth:
                 del manager_stack[d]
 
-        # Every person gets their own unique team
-        team_counter += 1
-        team_id = f"WORKTEAM-1-{team_counter:03d}"
-        team_name = f"CX: {title_to_dept(title, name)}"
-
-        # parentTeamId = manager's teamId (or NONE for root)
         if manager_email == email:
+            # Top-level / root: create own team
+            team_counter += 1
+            team_id = f"WORKTEAM-1-{team_counter:03d}"
+            dept = title_to_dept(title, name)
+            team_name = f"CX: {dept}"
             parent_team_id = "NONE"
+            email_to_team[email] = {
+                "teamId": team_id,
+                "teamName": team_name,
+                "parentTeamId": parent_team_id,
+            }
+        elif is_manager:
+            # This person manages others: they get their own team
+            team_counter += 1
+            team_id = f"WORKTEAM-1-{team_counter:03d}"
+            dept = title_to_dept(title, name)
+            # Disambiguate team name with manager's name
+            team_name = f"CX: {dept} ({first_name} {last_name})"
+            # Parent = the manager's team
+            mgr_team = email_to_team.get(manager_email, {})
+            parent_team_id = mgr_team.get("teamId", "NONE")
+            email_to_team[email] = {
+                "teamId": team_id,
+                "teamName": team_name,
+                "parentTeamId": parent_team_id,
+            }
         else:
-            parent_team_id = email_to_team.get(manager_email, "NONE")
+            # IC: join their manager's team
+            if manager_email in email_to_team:
+                email_to_team[email] = email_to_team[manager_email]
+            else:
+                # Manager doesn't have a team yet (shouldn't happen), create one
+                team_counter += 1
+                team_id = f"WORKTEAM-1-{team_counter:03d}"
+                team_name = f"CX: Team {name}"
+                parent_team_id = "NONE"
+                email_to_team[email] = {
+                    "teamId": team_id,
+                    "teamName": team_name,
+                    "parentTeamId": parent_team_id,
+                }
 
-        email_to_team[email] = team_id
-
+        team_info = email_to_team[email]
         employee_id = str(100000 + len(entries))
 
         entries.append({
@@ -248,9 +289,9 @@ def build_workday_report(people: list[dict], domain: str = "cortex.io") -> dict:
             "firstName": first_name,
             "lastName": last_name,
             "managersEmail": manager_email,
-            "teamId": team_id,
-            "teamName": team_name,
-            "parentTeamId": parent_team_id,
+            "teamId": team_info["teamId"],
+            "teamName": team_info["teamName"],
+            "parentTeamId": team_info["parentTeamId"],
         })
 
     return {"Report_Entry": entries}, email_to_team
