@@ -281,6 +281,46 @@ def build_workday_report(people: list[dict], domain: str = "cortex.io") -> dict:
             "parentTeamId": team_info["parentTeamId"],
         })
 
+    return {"Report_Entry": entries}, teams
+
+
+def build_customer_report(people: list[dict], domain: str = "cortex.io") -> dict:
+    """Build the report in the customer's Workday format.
+
+    Uses: Employee_ID, Email, First_Name, Last_Name, Managers_Email,
+    and Workteam_Group array with teamName (ID), teamDisplayName, referenceID.
+    """
+    # First build the standard report to get team assignments
+    standard_report, teams_map = build_workday_report(people, domain=domain)
+
+    # Build a lookup: teamId -> parentTeamId
+    team_parent = {}
+    team_display = {}
+    for team_info in teams_map.values():
+        team_parent[team_info["teamId"]] = team_info["parentTeamId"]
+        team_display[team_info["teamId"]] = team_info["teamName"]
+
+    entries = []
+    for entry in standard_report["Report_Entry"]:
+        team_id = entry["teamId"]
+        parent_team_id = entry["parentTeamId"]
+
+        customer_entry = {
+            "Employee_ID": entry["employeeId"],
+            "Email": entry["email"],
+            "First_Name": entry["firstName"],
+            "Last_Name": entry["lastName"],
+            "Managers_Email": entry["managersEmail"],
+            "Workteam_Group": [
+                {
+                    "teamName": team_id,
+                    "teamDisplayName": entry["teamName"],
+                    "referenceID": parent_team_id,
+                }
+            ],
+        }
+        entries.append(customer_entry)
+
     return {"Report_Entry": entries}
 
 
@@ -363,9 +403,15 @@ def main():
         default="cortex.io",
     )
     parser.add_argument(
+        "--format", "-f",
+        choices=["all", "cortex", "customer"],
+        default="all",
+        help="Output format: 'cortex' (flat fields), 'customer' (Workteam_Group), or 'all' (default: both)",
+    )
+    parser.add_argument(
         "--push",
         action="store_true",
-        help="Commit and push cortex/index.json to git after generating",
+        help="Commit and push generated files to git",
     )
     args = parser.parse_args()
 
@@ -374,37 +420,47 @@ def main():
         print(f"Error: PDF not found at {pdf_path}", file=sys.stderr)
         sys.exit(1)
 
-    # Output always goes to cortex/index.json relative to this script
     script_dir = Path(__file__).resolve().parent
-    output_path = script_dir / "cortex" / "index.json"
-    output_path.parent.mkdir(parents=True, exist_ok=True)
 
     print(f"Parsing {pdf_path}...", file=sys.stderr)
     people = extract_people_from_pdf(str(pdf_path))
     print(f"Found {len(people)} employees", file=sys.stderr)
 
-    report = build_workday_report(people, domain=args.domain)
+    output_paths = []
 
-    output = json.dumps(report, indent=2) + "\n"
-    output_path.write_text(output)
-    print(f"Written to {output_path}", file=sys.stderr)
+    if args.format in ("all", "cortex"):
+        report, _ = build_workday_report(people, domain=args.domain)
+        out = script_dir / "cortex" / "index.json"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(report, indent=2) + "\n")
+        output_paths.append(out)
+        print(f"Written cortex format to {out}", file=sys.stderr)
 
-    if args.push:
-        _git_commit_and_push(script_dir, output_path)
+    if args.format in ("all", "customer"):
+        report = build_customer_report(people, domain=args.domain)
+        out = script_dir / "cortex-customer" / "index.json"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(report, indent=2) + "\n")
+        output_paths.append(out)
+        print(f"Written customer format to {out}", file=sys.stderr)
+
+    if args.push and output_paths:
+        _git_commit_and_push(script_dir, output_paths)
 
 
-def _git_commit_and_push(repo_dir: Path, file_path: Path):
-    """Commit and push the updated index.json."""
+def _git_commit_and_push(repo_dir: Path, file_paths: list[Path]):
+    """Commit and push the updated files."""
     def run(cmd: list[str]) -> subprocess.CompletedProcess:
         return subprocess.run(
             cmd, cwd=repo_dir, capture_output=True, text=True
         )
 
-    # Stage the file
-    result = run(["git", "add", str(file_path.relative_to(repo_dir))])
-    if result.returncode != 0:
-        print(f"git add failed: {result.stderr}", file=sys.stderr)
-        sys.exit(1)
+    # Stage all files
+    for fp in file_paths:
+        result = run(["git", "add", str(fp.relative_to(repo_dir))])
+        if result.returncode != 0:
+            print(f"git add failed: {result.stderr}", file=sys.stderr)
+            sys.exit(1)
 
     # Check if there are staged changes
     result = run(["git", "diff", "--cached", "--quiet"])
