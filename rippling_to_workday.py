@@ -169,12 +169,17 @@ KNOWN_TITLES = {
 
 
 def build_workday_report(people: list[dict], domain: str = "cortex.io") -> dict:
-    """Convert flat people list with depth into Workday report format."""
+    """Convert flat people list with depth into Workday report format.
+
+    Each person gets their own unique team. parentTeamId always points
+    to the person's manager's teamId, matching the Pied Piper / Workday
+    supervisory org model.
+    """
     entries = []
     # Track the manager stack: depth -> person info
     manager_stack = {}
-    # Track teams: manager_email -> team info
-    teams = {}
+    # Map email -> teamId for parent lookups
+    email_to_team = {}
     team_counter = 0
 
     # Fill in missing titles from known data
@@ -188,9 +193,6 @@ def build_workday_report(people: list[dict], domain: str = "cortex.io") -> dict:
         if min_depth > 0:
             for p in people:
                 p["depth"] -= min_depth
-
-    # Index people by email so we can look up manager titles
-    people_by_email = {}
 
     for person in people:
         depth = person["depth"]
@@ -206,7 +208,6 @@ def build_workday_report(people: list[dict], domain: str = "cortex.io") -> dict:
             last_name = " ".join(parts[1:])
 
         email = infer_email(name, domain)
-        people_by_email[email] = {"name": name, "title": title}
 
         # Find manager: the most recent person at depth - 1
         manager_email = ""
@@ -226,47 +227,18 @@ def build_workday_report(people: list[dict], domain: str = "cortex.io") -> dict:
             if d > depth:
                 del manager_stack[d]
 
-        # Determine team: each manager gets a team, named by their title/role
+        # Every person gets their own unique team
+        team_counter += 1
+        team_id = f"WORKTEAM-1-{team_counter:03d}"
+        team_name = f"CX: {title_to_dept(title, name)}"
+
+        # parentTeamId = manager's teamId (or NONE for root)
         if manager_email == email:
-            # Top-level: create their own team
-            team_counter += 1
-            team_id = f"WORKTEAM-1-{team_counter:03d}"
-            team_name = f"CX: {title_to_dept(title, name)}"
             parent_team_id = "NONE"
-            teams[email] = {
-                "teamId": team_id,
-                "teamName": team_name,
-                "parentTeamId": parent_team_id,
-            }
-        elif manager_email not in teams:
-            # Manager doesn't have a team yet, create one based on MANAGER's title
-            team_counter += 1
-            team_id = f"WORKTEAM-1-{team_counter:03d}"
-
-            # Find manager's manager's team for parentTeamId
-            parent_team_id = "NONE"
-            if depth >= 2:
-                for d in range(depth - 2, -1, -1):
-                    if d in manager_stack and manager_stack[d]["email"] in teams:
-                        parent_team_id = teams[manager_stack[d]["email"]]["teamId"]
-                        break
-
-            # Use the MANAGER's title to name the team
-            mgr_info = people_by_email.get(manager_email, {})
-            mgr_title = mgr_info.get("title", "")
-            mgr_name = mgr_info.get("name", "")
-            team_name = f"CX: {title_to_dept(mgr_title, mgr_name)}"
-            teams[manager_email] = {
-                "teamId": team_id,
-                "teamName": team_name,
-                "parentTeamId": parent_team_id,
-            }
-
-        # Get team info
-        if manager_email in teams:
-            team_info = teams[manager_email]
         else:
-            team_info = {"teamId": "UNKNOWN", "teamName": "Unknown", "parentTeamId": "NONE"}
+            parent_team_id = email_to_team.get(manager_email, "NONE")
+
+        email_to_team[email] = team_id
 
         employee_id = str(100000 + len(entries))
 
@@ -276,12 +248,12 @@ def build_workday_report(people: list[dict], domain: str = "cortex.io") -> dict:
             "firstName": first_name,
             "lastName": last_name,
             "managersEmail": manager_email,
-            "teamId": team_info["teamId"],
-            "teamName": team_info["teamName"],
-            "parentTeamId": team_info["parentTeamId"],
+            "teamId": team_id,
+            "teamName": team_name,
+            "parentTeamId": parent_team_id,
         })
 
-    return {"Report_Entry": entries}, teams
+    return {"Report_Entry": entries}, email_to_team
 
 
 def build_customer_report(people: list[dict], domain: str = "cortex.io") -> dict:
@@ -290,21 +262,10 @@ def build_customer_report(people: list[dict], domain: str = "cortex.io") -> dict
     Uses: Employee_ID, Email, First_Name, Last_Name, Managers_Email,
     and Workteam_Group array with teamName (ID), teamDisplayName, referenceID.
     """
-    # First build the standard report to get team assignments
-    standard_report, teams_map = build_workday_report(people, domain=domain)
-
-    # Build a lookup: teamId -> parentTeamId
-    team_parent = {}
-    team_display = {}
-    for team_info in teams_map.values():
-        team_parent[team_info["teamId"]] = team_info["parentTeamId"]
-        team_display[team_info["teamId"]] = team_info["teamName"]
+    standard_report, _ = build_workday_report(people, domain=domain)
 
     entries = []
     for entry in standard_report["Report_Entry"]:
-        team_id = entry["teamId"]
-        parent_team_id = entry["parentTeamId"]
-
         customer_entry = {
             "Employee_ID": entry["employeeId"],
             "Email": entry["email"],
@@ -313,9 +274,9 @@ def build_customer_report(people: list[dict], domain: str = "cortex.io") -> dict
             "Managers_Email": entry["managersEmail"],
             "Workteam_Group": [
                 {
-                    "teamName": team_id,
+                    "teamName": entry["teamId"],
                     "teamDisplayName": entry["teamName"],
-                    "referenceID": parent_team_id,
+                    "referenceID": entry["parentTeamId"],
                 }
             ],
         }
