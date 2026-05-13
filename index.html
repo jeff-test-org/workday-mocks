@@ -100,21 +100,22 @@
       const app = document.getElementById('app');
       const results = await Promise.allSettled(
         REPORTS.map(async name => {
-          const url = `${BASE}/${name}/index.json`;
+          const fetchUrl = `${BASE}/${name}/index.json`;
+          const displayUrl = `${BASE}/${name}`;
           const [res, lastUpdated] = await Promise.all([
-            fetch(url),
+            fetch(fetchUrl),
             fetchLastUpdated(name),
           ]);
           if (!res.ok) throw new Error(`${res.status}`);
           const data = await res.json();
-          return { name, url, data, lastUpdated };
+          return { name, url: displayUrl, fetchUrl, data, lastUpdated };
         })
       );
 
       const cards = results
         .filter(r => r.status === 'fulfilled')
         .map(r => r.value)
-        .map(({ name, url, data, lastUpdated }) => {
+        .map(({ name, url, fetchUrl, data, lastUpdated }) => {
           const entries = data.Report_Entry || [];
           const first = entries[0] || {};
           const badges = detectFormat(first);
@@ -128,7 +129,7 @@
 
           return `
             <div class="card" id="card-${name}">
-              <h2><a href="${url}" target="_blank">${formatName(name)}</a></h2>
+              <h2><a href="${fetchUrl}" target="_blank">${formatName(name)}</a></h2>
               <div class="meta">
                 <span>${entries.length} employees</span>
                 <span>${teams.size} teams</span>
