@@ -35,6 +35,8 @@
   <div id="app" class="loading">Loading reports...</div>
 
   <script>
+    const REPO_OWNER = 'jeff-test-org';
+    const REPO_NAME = 'workday-mocks';
     const BASE = location.origin + location.pathname.replace(/\/index\.html$/, '').replace(/\/$/, '');
     const REPORTS = [
       'cortex',
@@ -73,22 +75,40 @@
       return slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
     }
 
+    async function fetchLastUpdated(name) {
+      try {
+        const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/commits?path=${name}/index.json&per_page=1`;
+        const res = await fetch(apiUrl);
+        if (!res.ok) return null;
+        const commits = await res.json();
+        if (commits.length === 0) return null;
+        return new Date(commits[0].commit.committer.date);
+      } catch { return null; }
+    }
+
+    function formatDate(d) {
+      return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+    }
+
     async function loadReports() {
       const app = document.getElementById('app');
       const results = await Promise.allSettled(
         REPORTS.map(async name => {
           const url = `${BASE}/${name}/index.json`;
-          const res = await fetch(url);
+          const [res, lastUpdated] = await Promise.all([
+            fetch(url),
+            fetchLastUpdated(name),
+          ]);
           if (!res.ok) throw new Error(`${res.status}`);
           const data = await res.json();
-          return { name, url, data };
+          return { name, url, data, lastUpdated };
         })
       );
 
       const cards = results
         .filter(r => r.status === 'fulfilled')
         .map(r => r.value)
-        .map(({ name, url, data }) => {
+        .map(({ name, url, data, lastUpdated }) => {
           const entries = data.Report_Entry || [];
           const first = entries[0] || {};
           const badges = detectFormat(first);
@@ -98,6 +118,7 @@
             (e.Workteam_Group && e.Workteam_Group[0] && (e.Workteam_Group[0].teamDisplayName || e.Workteam_Group[0].teamName)) ||
             ''
           ).filter(Boolean));
+          const updatedStr = lastUpdated ? `<span>Updated ${formatDate(lastUpdated)}</span>` : '';
 
           return `
             <div class="card" id="card-${name}">
@@ -106,6 +127,7 @@
                 <span>${entries.length} employees</span>
                 <span>${teams.size} teams</span>
                 ${badges.map(b => `<span class="badge ${b.cls}">${b.label}</span>`).join(' ')}
+                ${updatedStr}
               </div>
               <div class="url-box" onclick="copyUrl(this, '${url}')">${url}</div>
             </div>
