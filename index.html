@@ -87,7 +87,13 @@
     }
 
     function formatDate(d) {
-      return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+      const mm = String(d.getMonth() + 1).padStart(2, '0');
+      const dd = String(d.getDate()).padStart(2, '0');
+      const yyyy = d.getFullYear();
+      const HH = String(d.getHours()).padStart(2, '0');
+      const MM = String(d.getMinutes()).padStart(2, '0');
+      const SS = String(d.getSeconds()).padStart(2, '0');
+      return `${mm}-${dd}-${yyyy} ${HH}:${MM}:${SS}`;
     }
 
     async function loadReports() {
