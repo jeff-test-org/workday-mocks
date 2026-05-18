@@ -5,12 +5,14 @@ Parse a Rippling Org Chart PDF (list view) and output Workday-format JSON.
 Usage:
     python rippling_to_workday.py <path-to-pdf>
     python rippling_to_workday.py <path-to-pdf> --push
+    python rippling_to_workday.py --sync-employees [<path-to-pdf>] [--dryrun]
 
 The PDF should be printed from https://app.rippling.com/org-chart/chart
 using the "Org Chart" (list) view with "Expand All" clicked.
 
 Output is always written to cortex/index.json (relative to this script).
 Use --push to also commit and push to git.
+Use --sync-employees to compare report against cortex-cx and onboard/archive.
 """
 
 import argparse
@@ -18,6 +20,7 @@ import json
 import subprocess
 import sys
 from collections import defaultdict
+from datetime import date
 from pathlib import Path
 
 try:
@@ -301,7 +304,7 @@ def build_customer_report(people: list[dict], domain: str = "cortex.io") -> dict
     """Build the report in the customer's Workday format.
 
     Uses: Employee_ID, Email, First_Name, Last_Name, Managers_Email,
-    and Workteam_Group array with teamName (ID), teamDisplayName, referenceID.
+    and Workteam_Group array with teamName (ID), teamDisplayName, parentTeamId.
     """
     standard_report, _ = build_workday_report(people, domain=domain)
 
@@ -317,7 +320,7 @@ def build_customer_report(people: list[dict], domain: str = "cortex.io") -> dict
                 {
                     "teamName": entry["teamId"],
                     "teamDisplayName": entry["teamName"],
-                    "referenceID": entry["parentTeamId"],
+                    "parentTeamId": entry["parentTeamId"],
                 }
             ],
         }
@@ -394,11 +397,211 @@ def title_to_dept(title: str, manager_name: str) -> str:
     return f"Team {manager_name}"
 
 
+# Map accented/special characters to ASCII equivalents
+_CHAR_MAP = str.maketrans({
+    "ł": "l", "ę": "e", "ó": "o", "ą": "a", "ś": "s",
+    "ź": "z", "ż": "z", "ń": "n", "ć": "c", "ö": "o",
+    "ü": "u", "ä": "a", "é": "e", "è": "e", "ê": "e",
+    "á": "a", "à": "a", "í": "i", "ñ": "n", "ø": "o",
+})
+
+
+def _name_to_tag(name: str) -> str:
+    """Convert a name to the cortex entity tag format: firstname-lastname."""
+    parts = name.strip().split()
+    tag = "-".join(p.lower() for p in parts)
+    return tag.translate(_CHAR_MAP)
+
+
+def _get_cortex_employee_tags() -> tuple[set[str], set[str]]:
+    """Fetch all employee entity tags from cortex-cx.
+
+    Returns (all_tags, archived_tags) so callers can distinguish active
+    from archived entities.
+    """
+    # Active entities
+    r_active = subprocess.run(
+        ["cortex", "-t", "cortex-cx", "catalog", "list", "-t", "employee", "-p", "0"],
+        capture_output=True, text=True,
+    )
+    if r_active.returncode != 0:
+        print(f"Failed to list employees: {r_active.stderr}", file=sys.stderr)
+        sys.exit(1)
+    active_tags = {e["tag"].lower() for e in json.loads(r_active.stdout)["entities"]}
+
+    # All entities (including archived)
+    r_all = subprocess.run(
+        ["cortex", "-t", "cortex-cx", "catalog", "list", "-t", "employee", "-a", "-p", "0"],
+        capture_output=True, text=True,
+    )
+    if r_all.returncode != 0:
+        print(f"Failed to list employees: {r_all.stderr}", file=sys.stderr)
+        sys.exit(1)
+    all_tags = {e["tag"].lower() for e in json.loads(r_all.stdout)["entities"]}
+
+    archived_tags = all_tags - active_tags
+    return all_tags, archived_tags
+
+
+def _get_report_people(pdf_path: str | None, script_dir: Path, domain: str) -> list[dict]:
+    """Get people from either a PDF or the existing cortex/index.json in git."""
+    if pdf_path:
+        people_raw = extract_people_from_pdf(pdf_path)
+        return [
+            {"name": p["name"], "email": infer_email(p["name"], domain)}
+            for p in people_raw
+            if len(p["name"].strip().split()) >= 2  # skip garbage single-word entries
+        ]
+    # Fall back to existing report in git
+    report_path = script_dir / "cortex" / "index.json"
+    if not report_path.exists():
+        print(f"Error: No PDF provided and {report_path} not found.", file=sys.stderr)
+        sys.exit(1)
+    data = json.loads(report_path.read_text())
+    return [
+        {"name": f"{e['firstName']} {e['lastName']}", "email": e["email"]}
+        for e in data["Report_Entry"]
+        if e.get("firstName") and e.get("lastName")  # skip garbage entries
+    ]
+
+
+def sync_employees(pdf_path: str | None, script_dir: Path, domain: str, dryrun: bool, limit: int = 0):
+    """Compare Rippling report against cortex-cx employee entities.
+
+    - New employees (in report, not in cortex): run Onboarding workflow
+    - Departed employees (in cortex, not in report): archive with metadata
+    """
+    report_people = _get_report_people(pdf_path, script_dir, domain)
+    all_cortex_tags, archived_tags = _get_cortex_employee_tags()
+
+    report_tags = {}
+    for person in report_people:
+        tag = _name_to_tag(person["name"])
+        report_tags[tag] = person
+
+    # New employees: in report but not in cortex (including archived)
+    new_tags = set(report_tags.keys()) - all_cortex_tags
+    # Departed employees: in cortex and active (not archived), but not in report
+    active_tags = all_cortex_tags - archived_tags
+    departed_tags = active_tags - set(report_tags.keys())
+
+    # Detect likely tag mismatches: a new tag and departed tag share a last name,
+    # suggesting the cortex entity needs to be recreated with the correct tag.
+    # Prioritize last-name matches over first-name matches.
+    mismatches = []
+    unmatched_new = set(new_tags)
+    unmatched_departed = set(departed_tags)
+
+    # Pass 1: match by last name (strongest signal)
+    for nt in sorted(new_tags):
+        nt_parts = nt.split("-")
+        nt_last = nt_parts[-1] if len(nt_parts) > 1 else None
+        if not nt_last:
+            continue
+        for dt in sorted(departed_tags):
+            if dt not in unmatched_departed:
+                continue
+            dt_parts = dt.split("-")
+            dt_last = dt_parts[-1] if len(dt_parts) > 1 else None
+            if nt_last == dt_last:
+                mismatches.append((nt, report_tags[nt]["name"], dt))
+                unmatched_new.discard(nt)
+                unmatched_departed.discard(dt)
+                break
+
+    print(f"\n{'=' * 60}", file=sys.stderr)
+    print(f"Employee Sync {'(DRY RUN)' if dryrun else ''}", file=sys.stderr)
+    print(f"  Report: {len(report_tags)} employees", file=sys.stderr)
+    print(f"  Cortex: {len(active_tags)} active, {len(archived_tags)} archived", file=sys.stderr)
+    print(f"{'=' * 60}", file=sys.stderr)
+
+    # --- Tag mismatches (need manual fix) ---
+    if mismatches:
+        print(f"\nTag mismatches - fix in cortex-cx ({len(mismatches)}):", file=sys.stderr)
+        for new_tag, name, old_tag in mismatches:
+            print(f"  ! {name}: cortex has '{old_tag}', report generates '{new_tag}'", file=sys.stderr)
+
+    # --- New employees ---
+    processed = 0
+    truly_new = sorted(unmatched_new)
+    if truly_new:
+        print(f"\nNew employees ({len(truly_new)}):", file=sys.stderr)
+        for tag in truly_new:
+            person = report_tags[tag]
+            print(f"  + {person['name']} ({person['email']})", file=sys.stderr)
+            if not dryrun:
+                _run_onboarding_workflow(person["name"], person["email"])
+                processed += 1
+                if limit and processed >= limit:
+                    print(f"\n  Limit reached ({limit}). Stopping.", file=sys.stderr)
+                    break
+    else:
+        print("\nNo new employees.", file=sys.stderr)
+
+    # --- Departed employees ---
+    truly_departed = sorted(unmatched_departed)
+    if truly_departed and not (limit and processed >= limit):
+        print(f"\nDeparted employees ({len(truly_departed)}):", file=sys.stderr)
+        for tag in truly_departed:
+            print(f"  - {tag}", file=sys.stderr)
+            if not dryrun:
+                _archive_employee(tag)
+                processed += 1
+                if limit and processed >= limit:
+                    print(f"\n  Limit reached ({limit}). Stopping.", file=sys.stderr)
+                    break
+    elif not truly_departed:
+        print("\nNo departed employees.", file=sys.stderr)
+
+    if mismatches and not dryrun:
+        print(f"\nSkipped {len(mismatches)} mismatched employees. Fix tags in cortex-cx and re-run.", file=sys.stderr)
+
+    print(file=sys.stderr)
+
+
+def _run_onboarding_workflow(name: str, email: str):
+    """Run the Onboarding workflow for a new employee."""
+    tag = _name_to_tag(name)
+    normalized_email = email.lower().translate(_CHAR_MAP)
+    today = date.today().isoformat()
+    context = json.dumps({"name": name, "email": normalized_email, "tag": tag, "onboarded-date": today})
+    result = subprocess.run(
+        [
+            "cortex", "-t", "cortex-cx", "workflows", "run",
+            "-t", "onboarding", "-s", "GLOBAL",
+            "-x", context, "--wait",
+        ],
+        capture_output=True, text=True,
+    )
+    if result.returncode != 0:
+        print(f"    FAILED to onboard {name}: {result.stderr.strip()}", file=sys.stderr)
+    else:
+        print(f"    Onboarded {name}", file=sys.stderr)
+
+
+def _archive_employee(tag: str):
+    """Run the Offboarding workflow to archive an employee entity."""
+    today = date.today().isoformat()
+    context = json.dumps({"archived-date": today})
+    result = subprocess.run(
+        [
+            "cortex", "-t", "cortex-cx", "workflows", "run",
+            "-t", "offboarding", "-s", "ENTITY", "-e", tag,
+            "-x", context, "--wait",
+        ],
+        capture_output=True, text=True,
+    )
+    if result.returncode != 0:
+        print(f"    FAILED to offboard {tag}: {result.stderr.strip()}", file=sys.stderr)
+    else:
+        print(f"    Offboarded {tag} (archived: {today})", file=sys.stderr)
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Convert Rippling Org Chart PDF to Workday-format JSON"
     )
-    parser.add_argument("pdf_path", help="Path to the Rippling Org Chart PDF")
+    parser.add_argument("pdf_path", nargs="?", help="Path to the Rippling Org Chart PDF")
     parser.add_argument(
         "--domain", "-d",
         help="Email domain (default: cortex.io)",
@@ -415,18 +618,66 @@ def main():
         action="store_true",
         help="Commit and push generated files to git",
     )
+    parser.add_argument(
+        "--sync-employees",
+        action="store_true",
+        help="Sync employees: onboard new, archive departed",
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Override the 25%% change threshold safety check",
+    )
+    parser.add_argument(
+        "--dryrun",
+        action="store_true",
+        help="List changes without executing (use with --sync-employees)",
+    )
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=0,
+        help="Stop after processing N employees (use with --sync-employees)",
+    )
     args = parser.parse_args()
+
+    script_dir = Path(__file__).resolve().parent
+
+    if args.sync_employees:
+        pdf_path = str(Path(args.pdf_path)) if args.pdf_path else None
+        if pdf_path and not Path(pdf_path).exists():
+            print(f"Error: PDF not found at {pdf_path}", file=sys.stderr)
+            sys.exit(1)
+        sync_employees(pdf_path, script_dir, args.domain, args.dryrun, args.limit)
+        return
+
+    if not args.pdf_path:
+        parser.error("pdf_path is required unless --sync-employees is used")
 
     pdf_path = Path(args.pdf_path)
     if not pdf_path.exists():
         print(f"Error: PDF not found at {pdf_path}", file=sys.stderr)
         sys.exit(1)
 
-    script_dir = Path(__file__).resolve().parent
-
     print(f"Parsing {pdf_path}...", file=sys.stderr)
     people = extract_people_from_pdf(str(pdf_path))
     print(f"Found {len(people)} employees", file=sys.stderr)
+
+    # Safety check: compare against existing report
+    existing_report = script_dir / "cortex" / "index.json"
+    if existing_report.exists() and not args.force:
+        existing = json.loads(existing_report.read_text())
+        prev_count = len(existing.get("Report_Entry", []))
+        if prev_count > 0:
+            change_pct = abs(len(people) - prev_count) / prev_count
+            if change_pct >= 0.25:
+                print(
+                    f"Error: Employee count changed by {change_pct:.0%} "
+                    f"({prev_count} → {len(people)}). "
+                    f"Use --force to override.",
+                    file=sys.stderr,
+                )
+                sys.exit(1)
 
     output_paths = []
 
