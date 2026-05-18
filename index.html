@@ -38,18 +38,6 @@
     const REPO_OWNER = 'jeff-test-org';
     const REPO_NAME = 'workday-mocks';
     const BASE = location.origin + location.pathname.replace(/\/index\.html$/, '').replace(/\/$/, '');
-    const SKIP_DIRS = new Set(['.github']);
-
-    async function discoverReports() {
-      const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/`;
-      const res = await fetch(apiUrl);
-      if (!res.ok) throw new Error(`Failed to list repo contents: ${res.status}`);
-      const items = await res.json();
-      return items
-        .filter(item => item.type === 'dir' && !SKIP_DIRS.has(item.name) && !item.name.startsWith('.'))
-        .map(item => item.name)
-        .sort();
-    }
 
     function detectFormat(entry) {
       const badges = [];
@@ -94,10 +82,12 @@
       const app = document.getElementById('app');
       let reportNames;
       try {
-        reportNames = await discoverReports();
+        const res = await fetch(`${BASE}/reports.json`);
+        if (!res.ok) throw new Error(`${res.status}`);
+        reportNames = await res.json();
       } catch (e) {
         app.className = 'error';
-        app.textContent = `Failed to discover reports: ${e.message}`;
+        app.textContent = `Failed to load reports manifest: ${e.message}`;
         return;
       }
 

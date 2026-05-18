@@ -1,0 +1,31 @@
+name: Update reports.json
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  update-manifest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate reports.json
+        run: |
+          # Find all directories containing index.json, extract names, build JSON array
+          reports=$(find . -maxdepth 2 -name index.json -path '*/index.json' \
+            | sed 's|^\./||; s|/index.json$||' \
+            | sort \
+            | jq -R . \
+            | jq -s .)
+          echo "$reports" > reports.json
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports.json
+          git diff --cached --quiet || git commit -m "Update reports.json manifest"
+          git push
