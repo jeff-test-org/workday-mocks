@@ -1,0 +1,44 @@
+{
+  "username": "ISU_Cortex",
+  "ownershipReportUrl": "https://jeff-test-org.github.io/workday-mocks/media",
+  "reportMappingV2": {
+    "email": {
+      "columnName": "Email"
+    },
+    "employeeId": {
+      "columnName": "Employee_ID"
+    },
+    "firstName": {
+      "columnName": "First_Name"
+    },
+    "lastName": {
+      "columnName": "Last_Name"
+    },
+    "managerEmail": {
+      "columnName": "Managers_Email"
+    },
+    "employeeRole": null,
+    "rootTeams": [],
+    "teamListFields": {
+      "teamListKey": {
+        "columnName": "Workteam_Group"
+      },
+      "teamId": {
+        "columnName": "referenceID"
+      },
+      "teamName": {
+        "columnName": "Mission_Name"
+      },
+      "hierarchy": null,
+      "teamEmployeeManages": null
+    },
+    "fallbackFields": {
+      "teamId": null,
+      "teamName": null,
+      "fieldOnParentNode": null,
+      "fieldOnChildNode": null
+    },
+    "type": "ONE_EMPLOYEE_MULTIPLE_TEAMS"
+  },
+  "lastFour": "asdf"
+}

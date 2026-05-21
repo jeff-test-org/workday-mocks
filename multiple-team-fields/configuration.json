@@ -1,0 +1,34 @@
+{
+  "username": "ISU_Cortex",
+  "ownershipReportUrl": "https://jeff-test-org.github.io/workday-mocks/multiple-team-fields",
+  "reportMappingV2": {
+    "email": {
+      "columnName": "Email_ID"
+    },
+    "employeeId": {
+      "columnName": "Employee_ID"
+    },
+    "firstName": {
+      "columnName": "First_Name"
+    },
+    "lastName": {
+      "columnName": "Last_Name"
+    },
+    "managerEmail": null,
+    "employeeRole": {
+      "columnName": "Business_Title"
+    },
+    "rootTeams": [],
+    "teamListFields": null,
+    "fallbackFields": {
+      "teamId": null,
+      "teamName": {
+        "columnName": "Division"
+      },
+      "fieldOnParentNode": null,
+      "fieldOnChildNode": null
+    },
+    "type": "ONE_EMPLOYEE_ONE_TEAM"
+  },
+  "lastFour": "asdf"
+}

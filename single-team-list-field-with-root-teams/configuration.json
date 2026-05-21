@@ -1,0 +1,58 @@
+{
+  "username": "ISU_Cortex",
+  "ownershipReportUrl": "https://jeff-test-org.github.io/workday-mocks/single-team-list-field-with-root-teams",
+  "reportMappingV2": {
+    "email": {
+      "columnName": "email"
+    },
+    "employeeId": {
+      "columnName": "employeeId"
+    },
+    "firstName": {
+      "columnName": "firstName"
+    },
+    "lastName": {
+      "columnName": "lastName"
+    },
+    "managerEmail": {
+      "columnName": "managerEmail"
+    },
+    "employeeRole": {
+      "columnName": "employeeRole"
+    },
+    "rootTeams": [],
+    "teamListFields": {
+      "teamListKey": {
+        "columnName": "allSupervisoryOrganizationsManaged_group"
+      },
+      "teamId": {
+        "columnName": "employeeSupervisoryOrgId"
+      },
+      "teamName": {
+        "columnName": "employeeSupervisoryOrgName"
+      },
+      "hierarchy": {
+        "fieldOnChildNode": {
+          "columnName": "teamSupervisoryOrgSuperiorId"
+        },
+        "fieldOnParentNode": {
+          "columnName": "employeeSupervisoryOrgId",
+          "isList": false
+        }
+      },
+      "teamEmployeeManages": null
+    },
+    "fallbackFields": {
+      "teamId": {
+        "columnName": "teamDisplayId"
+      },
+      "teamName": {
+        "columnName": "teamDisplayName"
+      },
+      "fieldOnParentNode": null,
+      "fieldOnChildNode": null
+    },
+    "type": "ONE_EMPLOYEE_MULTIPLE_TEAMS"
+  },
+  "lastFour": "asdf"
+}

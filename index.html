@@ -25,6 +25,9 @@
     .url-box:hover { background: #eee; }
     .url-box::after { content: 'click to copy'; position: absolute; right: 8px; top: 50%; transform: translateY(-50%); font-family: -apple-system, sans-serif; font-size: 0.7rem; color: #999; }
     .copied .url-box::after { content: 'copied!'; color: #2e7d32; }
+    .links { margin-top: 0.75rem; display: flex; gap: 1rem; font-size: 0.85rem; }
+    .links a { color: #0366d6; text-decoration: none; }
+    .links a:hover { text-decoration: underline; }
     .loading { text-align: center; padding: 3rem; color: #999; }
     .error { color: #c62828; }
   </style>
@@ -120,6 +123,7 @@
           ).filter(Boolean));
           const updatedStr = lastUpdated ? `<span>Updated ${formatDate(lastUpdated)}</span>` : '';
 
+          const configUrl = `${BASE}/${name}/configuration.json`;
           return `
             <div class="card" id="card-${name}">
               <h2><a href="${fetchUrl}" target="_blank">${formatName(name)}</a></h2>
@@ -128,6 +132,10 @@
                 <span>${teams.size} teams</span>
                 ${badges.map(b => `<span class="badge ${b.cls}">${b.label}</span>`).join(' ')}
                 ${updatedStr}
+              </div>
+              <div class="links">
+                <a href="${fetchUrl}" target="_blank">Report JSON</a>
+                <a href="${configUrl}" target="_blank">Configuration JSON</a>
               </div>
               <div class="url-box" onclick="copyUrl(this, '${url}')">${url}</div>
             </div>

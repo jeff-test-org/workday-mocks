@@ -1,0 +1,28 @@
+{
+  "username": "ISU_Cortex",
+  "ownershipReportUrl": "https://jeff-test-org.github.io/workday-mocks/minimal-fields-filled-out",
+  "reportMappingV2": {
+    "email": {
+      "columnName": "email"
+    },
+    "employeeId": {
+      "columnName": "employeeId"
+    },
+    "firstName": null,
+    "lastName": null,
+    "managerEmail": null,
+    "employeeRole": null,
+    "rootTeams": [],
+    "teamListFields": null,
+    "fallbackFields": {
+      "teamId": null,
+      "teamName": {
+        "columnName": "teamName"
+      },
+      "fieldOnParentNode": null,
+      "fieldOnChildNode": null
+    },
+    "type": "ONE_EMPLOYEE_ONE_TEAM"
+  },
+  "lastFour": "asdf"
+}
