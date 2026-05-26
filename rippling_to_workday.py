@@ -305,24 +305,65 @@ def build_customer_report(people: list[dict], domain: str = "cortex.io") -> dict
 
     Uses: Employee_ID, Email, First_Name, Last_Name, Managers_Email,
     and Workteam_Group array with teamName (ID), teamDisplayName, parentTeamId.
+
+    Managers who lead a sub-team get two Workteam_Group entries:
+    1. Their manager's (parent) team — as a member
+    2. Their own team — with Team_Managed indicating they manage it
     """
-    standard_report, _ = build_workday_report(people, domain=domain)
+    standard_report, email_to_team = build_workday_report(people, domain=domain)
+
+    # Build a lookup from teamId to team info for parent team resolution
+    team_id_to_info = {}
+    for info in email_to_team.values():
+        tid = info["teamId"]
+        if tid not in team_id_to_info:
+            team_id_to_info[tid] = info
 
     entries = []
     for entry in standard_report["Report_Entry"]:
+        own_team = {
+            "teamName": entry["teamId"],
+            "teamDisplayName": entry["teamName"],
+            "parentTeamId": entry["parentTeamId"],
+        }
+
+        # Check if this person manages their own team (has reports)
+        parent_id = entry["parentTeamId"]
+        mgr_email = entry["managersEmail"]
+        mgr_team = email_to_team.get(mgr_email, {})
+
+        # A manager has a different team than their manager, and a valid parent
+        is_sub_manager = (
+            parent_id != "NONE"
+            and mgr_team.get("teamId") == parent_id
+            and entry["teamId"] != parent_id
+        )
+
+        teams = []
+        if is_sub_manager:
+            # First entry: member of parent (manager's) team
+            parent_info = team_id_to_info.get(parent_id, {})
+            teams.append({
+                "teamName": parent_id,
+                "teamDisplayName": parent_info.get("teamName", parent_id),
+                "parentTeamId": parent_info.get("parentTeamId", "NONE"),
+            })
+            # Second entry: manager of own team
+            own_team["Team_Managed"] = entry["teamId"]
+            teams.append(own_team)
+        else:
+            # Top-level manager: mark as managing their own team if they have reports
+            if entry["email"] == mgr_email or entry["teamId"] != mgr_team.get("teamId"):
+                own_team["Team_Managed"] = entry["teamId"]
+            teams.append(own_team)
+
         customer_entry = {
             "Employee_ID": entry["employeeId"],
             "Email": entry["email"],
             "First_Name": entry["firstName"],
             "Last_Name": entry["lastName"],
             "Managers_Email": entry["managersEmail"],
-            "Workteam_Group": [
-                {
-                    "teamName": entry["teamId"],
-                    "teamDisplayName": entry["teamName"],
-                    "parentTeamId": entry["parentTeamId"],
-                }
-            ],
+            "Workteam_Group": teams,
         }
         entries.append(customer_entry)
 
