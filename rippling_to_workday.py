@@ -605,7 +605,7 @@ def _run_onboarding_workflow(name: str, email: str):
     tag = _name_to_tag(name)
     normalized_email = email.lower().translate(_CHAR_MAP)
     today = date.today().isoformat()
-    context = json.dumps({"name": name, "email": normalized_email, "tag": tag, "onboarded-date": today})
+    context = json.dumps({"name": name, "title": name, "email": normalized_email, "tag": tag, "onboarded-date": today})
     result = subprocess.run(
         [
             "cortex", "-t", "cortex-cx", "workflows", "run",
