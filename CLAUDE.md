@@ -4,28 +4,30 @@
 
 Mock Workday employee reports generated from Rippling org chart PDFs. Hosted as static JSON and served via GitHub Pages for Cortex integrations.
 
-## Key Script: rippling_to_workday.py
+## Key Script: rippling_to_workday_cli.py
+
+Uses direct Cortex CLI catalog commands (create/archive) for employee sync.
 
 ### Usage
 
 ```bash
 # Generate Workday JSON from Rippling org chart PDF
-python rippling_to_workday.py <path-to-pdf>
+python rippling_to_workday_cli.py <path-to-pdf>
 
 # Generate + commit + push
-python rippling_to_workday.py <path-to-pdf> --push
+python rippling_to_workday_cli.py <path-to-pdf> --push
 
 # Sync employees: compare report against cortex-cx entities (dry run)
-python rippling_to_workday.py --sync-employees --dryrun
+python rippling_to_workday_cli.py --sync-employees --dryrun
 
 # Sync with a new PDF
-python rippling_to_workday.py --sync-employees <path-to-pdf> --dryrun
+python rippling_to_workday_cli.py --sync-employees <path-to-pdf> --dryrun
 
-# Sync for real (onboards new, archives departed)
-python rippling_to_workday.py --sync-employees
+# Sync for real (creates new, archives departed)
+python rippling_to_workday_cli.py --sync-employees
 
 # Limit processing (useful for testing)
-python rippling_to_workday.py --sync-employees --limit 5
+python rippling_to_workday_cli.py --sync-employees --limit 5
 ```
 
 ### How it works
@@ -34,7 +36,11 @@ python rippling_to_workday.py --sync-employees --limit 5
 2. Extracts names, titles, and hierarchy depth from character positions
 3. Builds Workday-format JSON with team assignments and manager relationships
 4. Outputs to `cortex/index.json` (flat format) and `cortex-team-list/index.json` (Workteam_Group format)
-5. `--sync-employees` compares report against cortex-cx catalog, runs onboarding/offboarding workflows
+5. `--sync-employees` compares report against cortex-cx catalog, creates/archives entities via CLI
+
+### Legacy: rippling_to_workday_workflow.py
+
+The original script that used Cortex workflows for onboarding/offboarding. Kept for reference but not actively used.
 
 ### Safety checks
 

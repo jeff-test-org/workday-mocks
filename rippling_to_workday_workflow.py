@@ -605,17 +605,18 @@ def _run_onboarding_workflow(name: str, email: str):
     tag = _name_to_tag(name)
     normalized_email = email.lower().translate(_CHAR_MAP)
     today = date.today().isoformat()
-    context = json.dumps({"name": name, "title": name, "email": normalized_email, "tag": tag, "onboarded-date": today})
+    context = json.dumps({"name": name, "email": normalized_email, "tag": tag, "onboarded-date": today})
     result = subprocess.run(
         [
             "cortex", "-t", "cortex-cx", "workflows", "run",
             "-t", "onboarding", "-s", "GLOBAL",
-            "-x", context, "--wait",
+            "-x", context,
         ],
         capture_output=True, text=True,
     )
     if result.returncode != 0:
-        print(f"    FAILED to onboard {name}: {result.stderr.strip()}", file=sys.stderr)
+        error = (result.stderr.strip() or result.stdout.strip())
+        print(f"    FAILED to onboard {name}: {error}", file=sys.stderr)
     else:
         print(f"    Onboarded {name}", file=sys.stderr)
 
@@ -628,12 +629,13 @@ def _archive_employee(tag: str):
         [
             "cortex", "-t", "cortex-cx", "workflows", "run",
             "-t", "offboarding", "-s", "ENTITY", "-e", tag,
-            "-x", context, "--wait",
+            "-x", context,
         ],
         capture_output=True, text=True,
     )
     if result.returncode != 0:
-        print(f"    FAILED to offboard {tag}: {result.stderr.strip()}", file=sys.stderr)
+        error = (result.stderr.strip() or result.stdout.strip())
+        print(f"    FAILED to offboard {tag}: {error}", file=sys.stderr)
     else:
         print(f"    Offboarded {tag} (archived: {today})", file=sys.stderr)
 
