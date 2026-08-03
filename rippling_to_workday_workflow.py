@@ -295,6 +295,7 @@ def build_workday_report(people: list[dict], domain: str = "cortex.io") -> dict:
             "teamId": team_info["teamId"],
             "teamName": team_info["teamName"],
             "parentTeamId": team_info["parentTeamId"],
+            "employeeRole": title,
         })
 
     return {"Report_Entry": entries}, email_to_team
