@@ -1,0 +1,104 @@
+{
+  "Report_Entry": [
+    {
+      "email": "ron.swanson@pawnee.gov",
+      "employeeId": "300000",
+      "firstName": "Ron",
+      "lastName": "Swanson",
+      "managersEmail": "ron.swanson@pawnee.gov",
+      "teamId": "WORKTEAM-PARKS-000",
+      "teamName": "PARKS: Pawnee Parks & Rec",
+      "parentTeamId": "NONE"
+    },
+    {
+      "email": "leslie.knope@pawnee.gov",
+      "employeeId": "300001",
+      "firstName": "Leslie",
+      "lastName": "Knope",
+      "managersEmail": "ron.swanson@pawnee.gov",
+      "teamId": "WORKTEAM-PARKS-001",
+      "teamName": "PARKS: Deputy Director",
+      "parentTeamId": "WORKTEAM-PARKS-000"
+    },
+    {
+      "email": "tom.haverford@pawnee.gov",
+      "employeeId": "300002",
+      "firstName": "Tom",
+      "lastName": "Haverford",
+      "managersEmail": "leslie.knope@pawnee.gov",
+      "teamId": "WORKTEAM-PARKS-002",
+      "teamName": "PARKS: Entertainment",
+      "parentTeamId": "WORKTEAM-PARKS-001"
+    },
+    {
+      "email": "jean.ralphio@pawnee.gov",
+      "employeeId": "300003",
+      "firstName": "Jean-Ralphio",
+      "lastName": "Saperstein",
+      "managersEmail": "tom.haverford@pawnee.gov",
+      "teamId": "WORKTEAM-PARKS-002",
+      "teamName": "PARKS: Entertainment",
+      "parentTeamId": "WORKTEAM-PARKS-001"
+    },
+    {
+      "email": "april.ludgate@pawnee.gov",
+      "employeeId": "300004",
+      "firstName": "April",
+      "lastName": "Ludgate",
+      "managersEmail": "leslie.knope@pawnee.gov",
+      "teamId": "WORKTEAM-PARKS-001",
+      "teamName": "PARKS: Deputy Director",
+      "parentTeamId": "WORKTEAM-PARKS-000"
+    },
+    {
+      "email": "andy.dwyer@pawnee.gov",
+      "employeeId": "300005",
+      "firstName": "Andy",
+      "lastName": "Dwyer",
+      "managersEmail": "leslie.knope@pawnee.gov",
+      "teamId": "WORKTEAM-PARKS-001",
+      "teamName": "PARKS: Deputy Director",
+      "parentTeamId": "WORKTEAM-PARKS-000"
+    },
+    {
+      "email": "ann.perkins@pawnee.gov",
+      "employeeId": "300006",
+      "firstName": "Ann",
+      "lastName": "Perkins",
+      "managersEmail": "leslie.knope@pawnee.gov",
+      "teamId": "WORKTEAM-PARKS-001",
+      "teamName": "PARKS: Deputy Director",
+      "parentTeamId": "WORKTEAM-PARKS-000"
+    },
+    {
+      "email": "chris.traeger@pawnee.gov",
+      "employeeId": "300007",
+      "firstName": "Chris",
+      "lastName": "Traeger",
+      "managersEmail": "ron.swanson@pawnee.gov",
+      "teamId": "WORKTEAM-PARKS-003",
+      "teamName": "PARKS: City Management",
+      "parentTeamId": "WORKTEAM-PARKS-000"
+    },
+    {
+      "email": "jerry.gergich@pawnee.gov",
+      "employeeId": "300008",
+      "firstName": "Jerry",
+      "lastName": "Gergich",
+      "managersEmail": "chris.traeger@pawnee.gov",
+      "teamId": "WORKTEAM-PARKS-003",
+      "teamName": "PARKS: City Management",
+      "parentTeamId": "WORKTEAM-PARKS-000"
+    },
+    {
+      "email": "donna.meagle@pawnee.gov",
+      "employeeId": "300009",
+      "firstName": "Donna",
+      "lastName": "Meagle",
+      "managersEmail": "chris.traeger@pawnee.gov",
+      "teamId": "WORKTEAM-PARKS-003",
+      "teamName": "PARKS: City Management",
+      "parentTeamId": "WORKTEAM-PARKS-000"
+    }
+  ]
+}
