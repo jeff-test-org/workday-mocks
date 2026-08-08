@@ -158,6 +158,40 @@
           "parentTeamId": "WORKTEAM-PARKS-000"
         }
       ]
+    },
+    {
+      "Employee_ID": "300010",
+      "Email": "ben.wyatt@pawnee.gov",
+      "First_Name": "Ben",
+      "Last_Name": "Wyatt",
+      "Managers_Email": "ron.swanson@pawnee.gov",
+      "Workteam_Group": [
+        {
+          "teamName": "WORKTEAM-PARKS-000",
+          "teamDisplayName": "PARKS: Pawnee Parks & Rec",
+          "parentTeamId": "NONE"
+        },
+        {
+          "teamName": "WORKTEAM-PARKS-004",
+          "teamDisplayName": "PARKS: Finance",
+          "parentTeamId": "WORKTEAM-PARKS-000",
+          "Team_Managed": "WORKTEAM-PARKS-004"
+        }
+      ]
+    },
+    {
+      "Employee_ID": "300011",
+      "Email": "craig.middlebrooks@pawnee.gov",
+      "First_Name": "Craig",
+      "Last_Name": "Middlebrooks",
+      "Managers_Email": "ben.wyatt@pawnee.gov",
+      "Workteam_Group": [
+        {
+          "teamName": "WORKTEAM-PARKS-004",
+          "teamDisplayName": "PARKS: Finance",
+          "parentTeamId": "WORKTEAM-PARKS-000"
+        }
+      ]
     }
   ]
 }
