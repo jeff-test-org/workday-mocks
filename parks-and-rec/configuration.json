@@ -14,27 +14,39 @@
     "lastName": {
       "columnName": "lastName"
     },
-    "managerEmail": {
-      "columnName": "managersEmail"
-    },
+    "managerEmail": null,
     "employeeRole": null,
     "rootTeams": [],
-    "teamListFields": null,
-    "fallbackFields": {
-      "teamId": {
-        "columnName": "teamId"
+    "teamListFields": {
+      "teamListKey": {
+        "columnName": "Workteam_Group"
       },
-      "teamName": {
+      "teamId": {
         "columnName": "teamName"
       },
-      "fieldOnParentNode": {
-        "columnName": "childHierarchyColumn"
+      "teamName": {
+        "columnName": "teamDisplayName"
       },
-      "fieldOnChildNode": {
-        "columnName": "parentHierarchyColumn"
+      "hierarchy": {
+        "fieldOnChildNode": {
+          "columnName": "parentTeamId"
+        },
+        "fieldOnParentNode": {
+          "columnName": "teamName",
+          "isList": false
+        }
+      },
+      "teamEmployeeManages": {
+        "columnName": "Team_Managed"
       }
     },
-    "type": "ONE_EMPLOYEE_ONE_TEAM"
+    "fallbackFields": {
+      "teamId": null,
+      "teamName": null,
+      "fieldOnParentNode": null,
+      "fieldOnChildNode": null
+    },
+    "type": "ONE_EMPLOYEE_MULTIPLE_TEAMS"
   },
-  "lastFour": "asdf"
+  "password": "asdf"
 }
