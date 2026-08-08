@@ -1,11 +1,11 @@
 {
   "Report_Entry": [
     {
-      "email": "ron.swanson@pawnee.gov",
-      "employeeId": "300000",
-      "firstName": "Ron",
-      "lastName": "Swanson",
-      "managersEmail": "ron.swanson@pawnee.gov",
+      "Employee_ID": "300000",
+      "Email": "ron.swanson@pawnee.gov",
+      "First_Name": "Ron",
+      "Last_Name": "Swanson",
+      "Managers_Email": "ron.swanson@pawnee.gov",
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-PARKS-000",
@@ -16,11 +16,11 @@
       ]
     },
     {
-      "email": "leslie.knope@pawnee.gov",
-      "employeeId": "300001",
-      "firstName": "Leslie",
-      "lastName": "Knope",
-      "managersEmail": "ron.swanson@pawnee.gov",
+      "Employee_ID": "300001",
+      "Email": "leslie.knope@pawnee.gov",
+      "First_Name": "Leslie",
+      "Last_Name": "Knope",
+      "Managers_Email": "ron.swanson@pawnee.gov",
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-PARKS-000",
@@ -36,11 +36,11 @@
       ]
     },
     {
-      "email": "tom.haverford@pawnee.gov",
-      "employeeId": "300002",
-      "firstName": "Tom",
-      "lastName": "Haverford",
-      "managersEmail": "leslie.knope@pawnee.gov",
+      "Employee_ID": "300002",
+      "Email": "tom.haverford@pawnee.gov",
+      "First_Name": "Tom",
+      "Last_Name": "Haverford",
+      "Managers_Email": "leslie.knope@pawnee.gov",
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-PARKS-001",
@@ -56,11 +56,11 @@
       ]
     },
     {
-      "email": "jean.ralphio@pawnee.gov",
-      "employeeId": "300003",
-      "firstName": "Jean-Ralphio",
-      "lastName": "Saperstein",
-      "managersEmail": "tom.haverford@pawnee.gov",
+      "Employee_ID": "300003",
+      "Email": "jean.ralphio@pawnee.gov",
+      "First_Name": "Jean-Ralphio",
+      "Last_Name": "Saperstein",
+      "Managers_Email": "tom.haverford@pawnee.gov",
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-PARKS-002",
@@ -70,11 +70,11 @@
       ]
     },
     {
-      "email": "april.ludgate@pawnee.gov",
-      "employeeId": "300004",
-      "firstName": "April",
-      "lastName": "Ludgate",
-      "managersEmail": "leslie.knope@pawnee.gov",
+      "Employee_ID": "300004",
+      "Email": "april.ludgate@pawnee.gov",
+      "First_Name": "April",
+      "Last_Name": "Ludgate",
+      "Managers_Email": "leslie.knope@pawnee.gov",
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-PARKS-001",
@@ -84,11 +84,11 @@
       ]
     },
     {
-      "email": "andy.dwyer@pawnee.gov",
-      "employeeId": "300005",
-      "firstName": "Andy",
-      "lastName": "Dwyer",
-      "managersEmail": "leslie.knope@pawnee.gov",
+      "Employee_ID": "300005",
+      "Email": "andy.dwyer@pawnee.gov",
+      "First_Name": "Andy",
+      "Last_Name": "Dwyer",
+      "Managers_Email": "leslie.knope@pawnee.gov",
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-PARKS-001",
@@ -98,11 +98,11 @@
       ]
     },
     {
-      "email": "ann.perkins@pawnee.gov",
-      "employeeId": "300006",
-      "firstName": "Ann",
-      "lastName": "Perkins",
-      "managersEmail": "leslie.knope@pawnee.gov",
+      "Employee_ID": "300006",
+      "Email": "ann.perkins@pawnee.gov",
+      "First_Name": "Ann",
+      "Last_Name": "Perkins",
+      "Managers_Email": "leslie.knope@pawnee.gov",
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-PARKS-001",
@@ -112,11 +112,11 @@
       ]
     },
     {
-      "email": "chris.traeger@pawnee.gov",
-      "employeeId": "300007",
-      "firstName": "Chris",
-      "lastName": "Traeger",
-      "managersEmail": "ron.swanson@pawnee.gov",
+      "Employee_ID": "300007",
+      "Email": "chris.traeger@pawnee.gov",
+      "First_Name": "Chris",
+      "Last_Name": "Traeger",
+      "Managers_Email": "ron.swanson@pawnee.gov",
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-PARKS-000",
@@ -132,11 +132,11 @@
       ]
     },
     {
-      "email": "jerry.gergich@pawnee.gov",
-      "employeeId": "300008",
-      "firstName": "Jerry",
-      "lastName": "Gergich",
-      "managersEmail": "chris.traeger@pawnee.gov",
+      "Employee_ID": "300008",
+      "Email": "jerry.gergich@pawnee.gov",
+      "First_Name": "Jerry",
+      "Last_Name": "Gergich",
+      "Managers_Email": "chris.traeger@pawnee.gov",
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-PARKS-003",
@@ -146,11 +146,11 @@
       ]
     },
     {
-      "email": "donna.meagle@pawnee.gov",
-      "employeeId": "300009",
-      "firstName": "Donna",
-      "lastName": "Meagle",
-      "managersEmail": "chris.traeger@pawnee.gov",
+      "Employee_ID": "300009",
+      "Email": "donna.meagle@pawnee.gov",
+      "First_Name": "Donna",
+      "Last_Name": "Meagle",
+      "Managers_Email": "chris.traeger@pawnee.gov",
       "Workteam_Group": [
         {
           "teamName": "WORKTEAM-PARKS-003",
